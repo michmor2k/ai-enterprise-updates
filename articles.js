@@ -1,43 +1,53 @@
 window.ARTICLES = [
     {
-        "title":  "Anthropic launches Claude Tag, replacing its Slack app with a persistent AI teammate that learns, monitors and works autonomously",
+        "title":  "Your enterprise AI agents should automatically remember which model is right for which task. Mindstone built the capability with Rebel",
         "source":  "VentureBeat AI",
-        "url":  "https://venturebeat.com/technology/anthropic-launches-claude-tag-replacing-its-slack-app-with-a-persistent-ai-teammate-that-learns-monitors-and-works-autonomously",
-        "date":  "2026-06-23",
-        "theme":  "Enterprise",
-        "summary":  "Anthropic launched Claude Tag, embedding its Opus 4.8 model as a multiplayer persistent agent directly inside Slack, replacing its previous Slack app. The tool accumulates channel context over time, works asynchronously on tasks, and can operate in ambient monitoring mode to flag important items across enterprise workflows. Internally, Anthropic reports that 65% of its own product team\u0027s code is now created through this deployment model.",
-        "vendorLean":  "Anthropic ΓÇö coverage centers on an Anthropic product launch with favorable framing and internal adoption metrics",
-        "imageUrl":  "https://images.ctfassets.net/jdtwqhzvc2n1/6CFsd7sGf60QrI8jTqYfuy/788282d94743cf3a42c6c4bb28553ad6/Nuneybits_Vector_art_of_entirely_burnt_orange_chat_panel_mergin_c649b311-f246-4715-9849-8358622f4bee.webp"
-    },
-    {
-        "title":  "No Claude Fable 5? No problem: Sakana achieves frontier performance with new Fugu multi-model, auto synthesis system",
-        "source":  "VentureBeat AI",
-        "url":  "https://venturebeat.com/orchestration/no-claude-fable-5-no-problem-sakana-achieves-frontier-performance-with-new-fugu-multi-model-auto-synthesis-system",
-        "date":  "2026-06-22",
+        "url":  "https://venturebeat.com/orchestration/your-enterprise-ai-agents-should-automatically-remember-which-model-is-right-for-which-task-mindstone-built-the-capability-with-rebel/",
+        "date":  "2026-06-24",
         "theme":  "Orchestration",
-        "summary":  "Sakana AI launched Fugu, a multi-agent orchestration system that dynamically routes queries across a swappable pool of specialized models to match frontier-level performance without relying on any single provider. Fugu Ultra scored 73.7 on SWE-Bench Pro, outperforming GPT-5.5 at 58.6, and is priced at $5/$30 per million input/output tokens. The platform is positioned as a hedge against vendor lock-in and export control disruptions.",
-        "vendorLean":  "Sakana AI ΓÇö article covers a Sakana product launch with benchmark comparisons that favor Fugu",
-        "imageUrl":  "https://images.ctfassets.net/jdtwqhzvc2n1/4kHEA49GjoZBqBlllf4GIv/0fd14ca57187e6d633ab33ceded01f69/ChatGPT_Image_Jun_22__2026__11_26_12_AM.png"
+        "summary":  "Mindstone\u0027s Rebel platform introduces a local-first, agentic AI operating system that uses markdown files for agent memory and instructions, automatically routing different task steps to the most appropriate AI model while preserving organizational context. The system enables enterprise agents to build persistent routing intelligence ΓÇö learning over time which model performs best for each task category without manual configuration. This addresses a core operational gap in multi-model enterprise deployments where model selection has historically been static or manual.",
+        "vendorLean":  "Mindstone ΓÇö promotes Rebel platform as the solution to enterprise model-routing",
+        "imageUrl":  "https://images.ctfassets.net/jdtwqhzvc2n1/1vjSZXGxKG3m4gHgnf9G3D/9d2de4fcc51903621386b6cb42c3f639/ChatGPT_Image_Jun_24__2026__04_50_03_PM.png"
     },
     {
-        "title":  "Researchers introduce Self-Harness, a framework that lets AI agents rewrite their own rules, boosting performance up to 60%",
+        "title":  "How Shopify built an AI stack that doesn\u0027t care which models survive",
         "source":  "VentureBeat AI",
-        "url":  "https://venturebeat.com/orchestration/researchers-introduce-self-harness-a-framework-that-lets-ai-agents-rewrite-their-own-rules-boosting-performance-up-to-60",
-        "date":  "2026-06-22",
+        "url":  "https://venturebeat.com/orchestration/how-shopify-built-an-ai-stack-that-doesnt-care-which-models-survive/",
+        "date":  "2026-06-24",
+        "theme":  "Strategy",
+        "summary":  "Shopify built a model-agnostic AI infrastructure using an LLM proxy layer that provides automatic failover across providers whenever any single model goes down, insulating engineering teams from vendor lock-in. The company also uses model distillation to create specialized models that are 2x cheaper and faster than general-purpose alternatives for specific tasks. The architecture reflects a deliberate enterprise strategy: invest in the orchestration layer, not any single model provider.",
+        "vendorLean":  "Neutral ΓÇö Shopify describes its own internal engineering approach with no single vendor promoted",
+        "imageUrl":  "https://images.ctfassets.net/jdtwqhzvc2n1/20bQ4S6NVl5DyUuE4sCPkt/3cf05921e3f3e6f5c5ae44e26713cfc6/u7277289442_AI_engineers_are_analyzing_different_models_repre_a031ca2a-342d-4a40-b2eb-fc3dbb875eba_0.png"
+    },
+    {
+        "title":  "Alibaba\u0027s model never trained as an agent ΓÇö and improved agent performance across seven benchmarks",
+        "source":  "VentureBeat AI",
+        "url":  "https://venturebeat.com/technology/alibabas-model-never-trained-as-an-agent-and-improved-agent-performance-across-seven-benchmarks/",
+        "date":  "2026-06-24",
         "theme":  "Agents",
-        "summary":  "Researchers published Self-Harness, a framework allowing AI agents to autonomously identify and rewrite their own operational constraints through systematic feedback loops, rather than requiring manual prompt engineering. The approach demonstrated performance improvements of up to 60% across task execution benchmarks without modifying the underlying foundation model. The work argues that the orchestration and harness layer ΓÇö not the base model ΓÇö is now the primary frontier for enterprise AI customization.",
-        "vendorLean":  "Neutral",
-        "imageUrl":  null
+        "summary":  "Alibaba\u0027s Qwen-AgentWorld trains models to predict environment responses rather than directly training on agent actions, representing a fundamental shift in how agentic AI capability is developed. The approach improved agent performance across seven benchmarks without any agent-specific training data, with researchers concluding that world modeling is a crucial missing piece in the path to general agents. The finding challenges the prevailing fine-tuning paradigm and suggests environment-modeling may be a more generalizable path to capable AI agents.",
+        "vendorLean":  "Alibaba/Qwen ΓÇö research positions Alibaba\u0027s Qwen-AgentWorld methodology as a breakthrough over current approaches",
+        "imageUrl":  "https://images.ctfassets.net/jdtwqhzvc2n1/5KgNJs5U9hQNBwID9QnJ0D/115ecf0e3e5c4261db0b258971a58b6b/qwen-world-smk1.jpg"
     },
     {
-        "title":  "Alibaba\u0027s AI video model rises to No. 2 in global rankings, as OpenAI\u0027s Sora and ByteDance\u0027s Seedance fall away",
+        "title":  "Mistral launches OCR 4, turning document extraction into a full enterprise AI play",
         "source":  "VentureBeat AI",
-        "url":  "https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away",
-        "date":  "2026-06-22",
-        "theme":  "Models",
-        "summary":  "Alibaba\u0027s HappyHorse 1.1, a unified 15B-parameter Transformer, climbed to second place in the Video Arena benchmark with 1,444 points, surpassing OpenAI\u0027s Sora and ByteDance\u0027s Seedance. The model generates video and synchronized audio simultaneously and introduces multi-image character reference consistency for enterprise production workflows. The release is backed by a $52.7 billion infrastructure expansion and is positioned for regional compliance deployments.",
-        "vendorLean":  "Alibaba ΓÇö article frames Alibaba\u0027s model as the benchmark leader with favorable performance framing",
-        "imageUrl":  "https://images.ctfassets.net/jdtwqhzvc2n1/5KFpqkXqsJ1UadPksN3wpB/437fe886256a70c820f5e152f0512430/Nuneybits_Vector_art_of_cheerful_horse_trotting_across_computer_f02e9dc0-d6b4-4a8c-b0f8-de134058b9c8.webp"
+        "url":  "https://venturebeat.com/data/mistral-launches-ocr-4-turning-document-extraction-into-a-full-enterprise-ai-play/",
+        "date":  "2026-06-24",
+        "theme":  "Enterprise",
+        "summary":  "Mistral released OCR 4, a document extraction model that returns structured document representations with bounding boxes and confidence scores, deployable as a self-contained container on an organization\u0027s own infrastructure. The on-premise deployment model is specifically designed for regulated industries with data residency requirements, positioning OCR 4 as an enterprise-grade alternative to cloud-dependent document AI services. The launch signals Mistral\u0027s expansion from foundational models into purpose-built enterprise data pipelines.",
+        "vendorLean":  "Mistral ΓÇö article covers Mistral\u0027s own product launch with Mistral as the clear beneficiary",
+        "imageUrl":  "https://images.ctfassets.net/jdtwqhzvc2n1/msSjc8ARR1xPpxHBZTTQ8/61ee220620ff5dfc326faf18ad15d161/Nuneybits_Vector_art_of_white_document_centered_in_orange_OCR_g_389a1d54-734c-4957-a8fa-848d9b6e9794.webp"
+    },
+    {
+        "title":  "Companies are scrambling to stop employees from maxing out AI budgets with small tasks",
+        "source":  "TechCrunch AI",
+        "url":  "https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks/",
+        "date":  "2026-06-24",
+        "theme":  "Enterprise",
+        "summary":  "After initially encouraging aggressive AI adoption, major enterprises are now implementing cost controls to prevent employees from depleting token budgets on low-value tasks, with Accenture leadership acknowledging that spend is becoming very unpredictable. The shift reflects growing CFO-level scrutiny of whether AI investments are delivering measurable returns, prompting governance frameworks to categorize tasks by AI-spend worthiness. The trend marks a maturation inflection point in enterprise AI: from growth-at-all-costs adoption to ROI-disciplined deployment.",
+        "vendorLean":  "Neutral ΓÇö reports on broad enterprise trend with Accenture cited as one data point",
+        "imageUrl":  "https://techcrunch.com/wp-content/uploads/2026/03/claude-app-centered-in-ai-apps-GettyImages-2167861906.jpg?w=1024"
     },
     {
         "title":  "Anthropic\u0027s Claude Tag is learning your company, one Slack message at a time",
@@ -45,9 +55,19 @@ window.ARTICLES = [
         "url":  "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/",
         "date":  "2026-06-23",
         "theme":  "Enterprise",
-        "summary":  "Anthropic\u0027s Claude Tag is a new Slack integration that functions as a persistent, always-on AI teammate with memory of organizational conversations across channels. It operates in both task-specific and proactive ambient modes, surfacing important updates and working asynchronously without requiring users to initiate each interaction. The product replaces Anthropic\u0027s previous Slack app and positions Claude as embedded institutional knowledge rather than a query-response tool.",
-        "vendorLean":  "Anthropic ΓÇö product launch coverage with favorable framing of Claude Tag capabilities",
+        "summary":  "Anthropic introduced Claude Tag, a persistent AI teammate embedded in Slack that learns organizational context by passively following channels and accumulating institutional knowledge over time. Available in beta for Enterprise and Team customers, the feature gives teams a shared @Claude identity with memory across conversations, enabling it to surface context-aware answers and take on assigned tasks. The move positions Anthropic directly against Microsoft Copilot, Glean, and others competing for the enterprise AI context-layer market.",
+        "vendorLean":  "Anthropic ΓÇö coverage of Anthropic\u0027s own product launch; Anthropic framed as enterprise AI context-layer contender",
         "imageUrl":  "https://techcrunch.com/wp-content/uploads/2026/06/Claude-Tag.png?w=1024"
+    },
+    {
+        "title":  "OpenAI unveils its first custom chip, built by Broadcom",
+        "source":  "TechCrunch AI",
+        "url":  "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/",
+        "date":  "2026-06-24",
+        "theme":  "Models",
+        "summary":  "OpenAI announced Jalape├▒o, its first custom inference chip co-developed with Broadcom, designed to reduce dependence on Nvidia GPUs and deliver significantly better performance-per-watt for running pre-trained models at scale. The chip is optimized specifically for inference rather than training, targeting the cost and latency bottlenecks that drive up per-query expenses for consumer and enterprise API users. By controlling silicon through deployment, OpenAI aims to make its services faster, cheaper, and more resilient against supply chain dependencies.",
+        "vendorLean":  "OpenAI/Broadcom ΓÇö OpenAI product announcement; positions OpenAI as vertically integrating against Nvidia dependency",
+        "imageUrl":  "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-24-at-9.49.59-AM.jpg?w=1024"
     },
     {
         "title":  "India\u0027s MoEngage bets that the future of marketing is millions of AI agents",
@@ -55,29 +75,19 @@ window.ARTICLES = [
         "url":  "https://techcrunch.com/2026/06/23/indias-moengage-bets-marketings-future-on-millions-of-ai-agents/",
         "date":  "2026-06-23",
         "theme":  "Agents",
-        "summary":  "MoEngage, an Indian customer engagement platform, acquired San Francisco-based Aampe in an all-cash deal worth tens of millions of dollars to add per-customer AI agent technology to its platform. Aampe assigns a dedicated AI agent to each individual customer, enabling personalized marketing decisions based on behavioral signals rather than traditional audience segmentation. The acquisition positions MoEngage to compete more directly against Salesforce and Adobe in the enterprise marketing automation space.",
-        "vendorLean":  "MoEngage ΓÇö acquisition announcement coverage with favorable competitive framing",
+        "summary":  "Indian customer engagement platform MoEngage acquired San Francisco-based startup Aampe in an all-cash deal worth tens of millions of dollars, gaining technology that assigns individual AI agents to each customer to personalize marketing messages based on behavioral signals rather than audience segments. The acquisition is positioned to help MoEngage compete with enterprise incumbents like Salesforce and Adobe by offering autonomous, per-customer decision-making at scale. The deal reflects a broader enterprise shift toward agent-per-entity architectures in customer engagement platforms.",
+        "vendorLean":  "MoEngage/Aampe ΓÇö M\u0026A announcement; MoEngage positioned as challenger to Salesforce/Adobe in enterprise marketing",
         "imageUrl":  "https://techcrunch.com/wp-content/uploads/2026/03/ai-bots-agents-GettyImages-2230799616.jpg?w=1024"
     },
     {
-        "title":  "The AI world is getting \u0027loopy\u0027",
-        "source":  "TechCrunch AI",
-        "url":  "https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/",
-        "date":  "2026-06-22",
-        "theme":  "Orchestration",
-        "summary":  "The article explores AI loops, an emerging paradigm where multiple agents continuously run in the background, autonomously improving systems without human initiation. Boris Cherny, creator of Claude Code, describes this shift as comparable in significance to the earlier transition from human-written to AI-generated code. The piece notes that while loops offer powerful autonomous problem-solving, they consume substantial compute with no inherent spending ceiling and require new oversight mechanisms to prevent drift.",
-        "vendorLean":  "Neutral",
-        "imageUrl":  "https://techcrunch.com/wp-content/uploads/2026/06/Screenshot-2026-06-22-at-3.44.39-PM.jpg?w=1024"
-    },
-    {
-        "title":  "The running list: major tech layoffs in 2026 where employers cited AI",
-        "source":  "TechCrunch AI",
-        "url":  "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/",
-        "date":  "2026-06-22",
-        "theme":  "Strategy",
-        "summary":  "TechCrunch maintains a running timeline of major tech sector workforce reductions in 2026 where companies explicitly cited AI adoption as a driver, covering Amazon, Oracle, Salesforce, PayPal, Cloudflare, Intuit, and others. A recurring pattern emerges: companies simultaneously report record revenues while cutting headcount, framing AI as both the engine of growth and the structural reason for reduced workforce needs. Oracle\u0027s June disclosure of 21,000 positions eliminated over 12 months is the most recent addition.",
-        "vendorLean":  "Neutral",
-        "imageUrl":  "https://techcrunch.com/wp-content/uploads/2026/06/Robot-hand.png?w=1024"
+        "title":  "The math behind the OpenAI Jalape├▒o chip",
+        "source":  "AI News",
+        "url":  "https://www.artificialintelligence-news.com/news/openai-jalapeno-chip-inference-economics/",
+        "date":  "2026-06-25",
+        "theme":  "Models",
+        "summary":  "OpenAI has developed the Jalape├▒o chip in partnership with Broadcom to reduce infrastructure costs for running large language models. The custom ASIC is specifically designed for LLM inference rather than general AI workloads, representing OpenAI\u0027s shift toward vertical integration. The chip transitioned from initial design to manufacturing in just nine months, with deployment beginning by end of 2026.",
+        "vendorLean":  "OpenAI ΓÇö positive coverage of their vertical integration strategy",
+        "imageUrl":  "https://www.artificialintelligence-news.com/wp-content/uploads/2026/06/openai-broadcom-jalapeno-inference-chip-image.png-1024x576.jpg"
     },
     {
         "title":  "Samsung opens ChatGPT Enterprise and Codex access after AI restrictions",
@@ -85,39 +95,29 @@ window.ARTICLES = [
         "url":  "https://www.artificialintelligence-news.com/news/samsung-chatgpt-enterprise-codex-employee-ai-use/",
         "date":  "2026-06-24",
         "theme":  "Enterprise",
-        "summary":  "Samsung Electronics has expanded employee access to OpenAI\u0027s ChatGPT Enterprise and Codex tools across its Korean operations and Device eXperience division worldwide, reversing a 2023 restriction imposed due to data-security concerns. The deployment enables staff to use these AI tools for software development, marketing, product development, and other business functions while maintaining enterprise-grade data protection controls.",
-        "vendorLean":  "OpenAI ΓÇö article emphasizes ChatGPT Enterprise security features, reseller arrangements, and broader Samsung-OpenAI partnership ecosystem",
+        "summary":  "Samsung Electronics is expanding employee access to ChatGPT Enterprise and Codex across all Korean employees and Device eXperience division staff worldwide, reversing its 2023 restrictions on generative AI tools. The enterprise deployment includes data protection controls and will support software development, marketing, product development, and manufacturing tasks. This marks a significant policy shift driven by competitive pressure and maturing enterprise AI security tooling.",
+        "vendorLean":  "OpenAI ΓÇö favorable framing of ChatGPT Enterprise and Codex adoption",
         "imageUrl":  "https://www.artificialintelligence-news.com/wp-content/uploads/2026/06/Samsung-opens-ChatGPT-Enterprise-and-Codex-access-after-AI-restrictions-1024x683.jpg"
     },
     {
-        "title":  "Anthropic drops \u0027workplace AI agents\u0027 directly inside Slack",
+        "title":  "Anthropic drops workplace AI agents directly inside Slack",
         "source":  "AI News",
         "url":  "https://www.artificialintelligence-news.com/news/anthropic-slack-workplace-ai-agents/",
         "date":  "2026-06-24",
         "theme":  "Agents",
-        "summary":  "Anthropic launched Claude Tag, a beta feature enabling its AI model to operate within shared Slack channels where team members can invoke it via @Claude mentions. The integration allows multiple employees to delegate tasks, monitor execution, and maintain conversation context without switching applications. The system operates asynchronously using Anthropic\u0027s Opus 4.8 engine and includes administrative controls for data governance and token cost management.",
-        "vendorLean":  "Anthropic ΓÇö article promotes Claude Tag\u0027s market position citing higher enterprise adoption than OpenAI (34.4% vs 32.3%) and highlights Slack integration as a competitive differentiator",
+        "summary":  "Anthropic launched Claude Tag, a beta feature integrating its AI model directly into Slack channels, allowing teams to collaborate on tasks by typing @Claude. The integration enables multiple employees to monitor live execution and reduces data movement between applications. The feature leverages Anthropic\u0027s Opus 4.8 engine and includes administrative controls for security and token cost management.",
+        "vendorLean":  "Anthropic ΓÇö promotional coverage of Claude Tag launch",
         "imageUrl":  "https://www.artificialintelligence-news.com/wp-content/uploads/2026/06/301d5ee481a352435c048a9df7ce172b9617b05f-2400x1260-1-1024x538.jpg"
     },
     {
-        "title":  "Mitigating vendor lock-in with Sakana AI Fugu multi-agent models",
+        "title":  "Omio scales travel product development using OpenAI models",
         "source":  "AI News",
-        "url":  "https://www.artificialintelligence-news.com/news/mitigating-vendor-lock-in-sakana-ai-fugu-multi-agent-models/",
-        "date":  "2026-06-22",
-        "theme":  "Orchestration",
-        "summary":  "Sakana AI introduced Fugu, an orchestration platform that coordinates multiple AI models through a single interface to reduce enterprise vendor dependency risks. The system routes queries to specialized agent models for complex tasks while protecting against supply chain disruptions caused by export controls and geopolitical restrictions. Early testing demonstrated strong performance on cybersecurity assessments, code review, and research tasks compared to closed-source competitors.",
-        "vendorLean":  "Sakana AI ΓÇö article features benchmark comparisons favoring Fugu against competitors and includes quotes from beta testers praising the system without equivalent critical analysis",
-        "imageUrl":  "https://www.artificialintelligence-news.com/wp-content/uploads/2026/06/mitigating-vendor-lock-in-sakana-ai-fugu-ultra-models-agentic-orchestration-agents-business-vendors-strategy-1024x768.jpg"
-    },
-    {
-        "title":  "Insurers pivot AI strategy toward core risk underwriting",
-        "source":  "AI News",
-        "url":  "https://www.artificialintelligence-news.com/news/insurers-pivot-ai-strategy-toward-core-risk-underwriting/",
-        "date":  "2026-06-16",
-        "theme":  "Strategy",
-        "summary":  "According to the 2026 Evident AI Index, insurance companies are shifting focus from general AI ambitions to deploying technologies that directly impact underwriting decisions and capital allocation. The sector is experiencing significant workforce restructuring, with AI specialist roles expanding 32% while overall insurance employment contracted 2.2%, and nearly 40% of indexed insurers now have dedicated senior AI leadership positions. Leading insurers including Zurich, Allianz, and AXA are demonstrating measurable returns on AI investments, with firms like Manulife, Generali, and Intact Financial projecting over $1 billion in AI-driven value.",
-        "vendorLean":  "Neutral",
-        "imageUrl":  "https://www.artificialintelligence-news.com/wp-content/uploads/2026/06/insurers-underwriting-ai-risk-insurance-claims-research-study-fintech-governance-1024x768.jpg"
+        "url":  "https://www.artificialintelligence-news.com/news/omio-scales-travel-product-development-using-openai-models/",
+        "date":  "2026-06-23",
+        "theme":  "Enterprise",
+        "summary":  "Omio, a multimodal travel platform coordinating with over 3,000 transportation providers across 47 countries, has integrated OpenAI\u0027s Codex directly into its engineering operations, reducing technical effort to approximately 20% of previous levels. Single engineers can now complete projects in one month that previously required multiple developers over a quarter. Omio also launched a conversational commerce interface grounding generative AI responses in real-time transportation data to enable natural-language trip booking.",
+        "vendorLean":  "OpenAI ΓÇö case study highlighting Codex and generative AI benefits",
+        "imageUrl":  "https://www.artificialintelligence-news.com/wp-content/uploads/2026/06/omio-travel-transport-logistics-openai-codex-ai-software-development-commerce-artificial-intelligence-models-1024x768.jpg"
     },
     {
         "title":  "Anthropic gives @Claude a permanent seat in your Slack channels",
@@ -125,8 +125,8 @@ window.ARTICLES = [
         "url":  "https://thenewstack.io/anthropic-claude-tag-slack/",
         "date":  "2026-06-23",
         "theme":  "Agents",
-        "summary":  "Anthropic integrated Claude directly into Slack channels as a persistent team participant, allowing employees to invoke the AI via @Claude mentions within existing communication workflows. The feature enables Claude to function asynchronously across shared channels, maintaining conversation context and delegating tasks without requiring users to switch applications. The integration positions Claude as an always-available workplace collaborator rather than a standalone chatbot.",
-        "vendorLean":  "Anthropic ΓÇö article frames Claude Tag as a product launch announcement, highlighting Anthropic\u0027s growing enterprise adoption and Slack integration as a competitive advantage",
+        "summary":  "Anthropic has integrated Claude directly into Slack channels, allowing users to access the AI assistant without leaving their workspace by using the @Claude tag. This integration provides a permanent presence for Claude, enabling seamless collaboration and communication within team environments. The feature streamlines workflows by bringing AI agent capabilities into where teams already collaborate.",
+        "vendorLean":  "Anthropic ΓÇö favorable coverage of Claude Tag workplace integration",
         "imageUrl":  null
     },
     {
@@ -135,99 +135,99 @@ window.ARTICLES = [
         "url":  "https://thenewstack.io/openclaw-hermes-agent-harness/",
         "date":  "2026-06-23",
         "theme":  "Orchestration",
-        "summary":  "The article examines how OpenClaw and Hermes agent frameworks share a common definition of what constitutes an AI agent but diverge fundamentally on the architectural approach to agent control and governance. Both frameworks agree on agent capabilities but disagree on where authority over agent behavior should reside and how control mechanisms should be enforced. The piece surfaces a core design tension in agent orchestration: centralized oversight versus decentralized autonomy.",
+        "summary":  "OpenClaw and Hermes frameworks align in their understanding of AI agent definitions but diverge on the mechanisms controlling agent behavior within cloud-native environments. The article examines how differing control models ΓÇö one favoring declarative orchestration, the other runtime governance ΓÇö have significant architectural implications for AI infrastructure. The debate highlights the still-unsettled standards landscape for agent orchestration.",
         "vendorLean":  "Neutral",
         "imageUrl":  null
     },
     {
-        "title":  "Can DNS become the basis for AI agent identity?",
+        "title":  "Developers are now validating code they didn\u0027t write ΓÇö and may not understand",
         "source":  "The New Stack AI",
-        "url":  "https://thenewstack.io/can-dns-become-the-basis-for-ai-agent-identity/",
+        "url":  "https://thenewstack.io/gitlab-ai-code-governance/",
         "date":  "2026-06-23",
-        "theme":  "Agents",
-        "summary":  "The article explores whether existing DNS infrastructure could serve as a foundational identity and discovery layer for autonomous AI agents operating in distributed environments. As multi-agent systems proliferate, establishing verifiable, interoperable identity for agents becomes a critical unsolved problem, and DNS offers a battle-tested, globally distributed mechanism. The piece examines both the technical feasibility and architectural trade-offs of repurposing DNS for agent identity at enterprise scale.",
-        "vendorLean":  "Neutral",
+        "theme":  "Enterprise",
+        "summary":  "As AI-generated code becomes increasingly prevalent in development workflows, developers face the challenge of reviewing and validating code they may not have written themselves and might struggle to comprehend. This emerging validation paradigm represents a significant shift in how teams manage code quality, accountability, and governance. The article explores the implications for software development practices and organizational risk as AI coding agents scale.",
+        "vendorLean":  "GitLab ΓÇö coverage tied to GitLab\u0027s AI code governance tooling",
         "imageUrl":  null
     },
     {
-        "title":  "AI can write the code. Your team still owns the debt.",
-        "source":  "The New Stack AI",
-        "url":  "https://thenewstack.io/ai-technical-debt-verification/",
-        "date":  "2026-06-23",
+        "title":  "AI coding token costs are on track to rival human payroll",
+        "source":  "InfoWorld",
+        "url":  "https://www.infoworld.com/article/4189176/ai-coding-token-costs-are-on-track-to-rival-human-payroll-2.html",
+        "date":  "2026-06-24",
         "theme":  "Strategy",
-        "summary":  "The article argues that while AI coding assistants can dramatically accelerate code production, development teams retain full responsibility for the quality, security, and long-term maintainability of AI-generated code. Organizations that fail to treat AI-written code with the same scrutiny as human-written code risk accumulating technical debt faster than they can manage it. The piece calls for verification workflows and ownership norms to keep pace with the speed gains that agentic coding tools provide.",
+        "summary":  "Gartner research warns that enterprises may pay as much for AI token usage as developer salaries within two years, driven by increased adoption of coding agents and consumption-based pricing models. The lack of cost visibility and immature governance frameworks leaves many organizations struggling to forecast and control AI expenses. Industry experts recommend implementing token thresholds, context engineering optimization, and use-case-driven decision frameworks to manage costs effectively.",
         "vendorLean":  "Neutral",
-        "imageUrl":  null
+        "imageUrl":  "https://www.infoworld.com/wp-content/uploads/2026/06/4189176-0-61895100-1782348537-shutterstock_2468047279.jpg?quality=50\u0026strip=all\u0026w=1024"
+    },
+    {
+        "title":  "Anthropic\u0027s Claude Tag aims to turn workplace AI from a personal assistant into a teammate",
+        "source":  "InfoWorld",
+        "url":  "https://www.infoworld.com/article/4189057/anthropics-claude-tag-aims-to-turn-workplace-ai-from-a-personal-assistant-into-a-teammate-2.html",
+        "date":  "2026-06-24",
+        "theme":  "Agents",
+        "summary":  "Anthropic launched Claude Tag, a Slack-based AI tool enabling teams to collaborate with a shared AI assistant that retains context across conversations and can complete autonomous tasks. Unlike prior AI assistants, Claude Tag can schedule follow-up work and proactively surface relevant information, reducing coordination overhead across engineering and business teams. The offering requires new governance frameworks for CIOs managing access, cost, and data security.",
+        "vendorLean":  "Anthropic ΓÇö positive framing of Claude Tag as a step-change in workplace AI",
+        "imageUrl":  "https://www.infoworld.com/wp-content/uploads/2026/06/4189057-0-46593600-1782323879-shutterstock_2308264205.jpg"
     },
     {
         "title":  "Open source grapples with agentic coding",
         "source":  "InfoWorld",
         "url":  "https://www.infoworld.com/article/4188440/open-source-grapples-with-agentic-coding.html",
         "date":  "2026-06-24",
-        "theme":  "Agents",
-        "summary":  "Nick Hodges argues that while open source maintainers are justified in their concerns about poor-quality AI-generated pull requests, outright banning AI contributions is counterproductive. He contends that evaluating code on merit and license compliance regardless of its origin serves projects better than source-based gatekeeping policies. The piece examines unresolved ownership and copyright questions surrounding agentic coding tools submitting contributions to open source projects.",
+        "theme":  "Philosophy",
+        "summary":  "Open source maintainers face challenges with AI-generated pull requests of questionable quality, and some projects have begun restricting AI-written code. The author argues that rejecting submissions based solely on their AI origin is counterproductive, asserting that code quality rather than authorship should be the true measure of acceptance. The article examines broader concerns around copyright ownership and license compliance as agentic coding scales.",
         "vendorLean":  "Neutral",
-        "imageUrl":  "https://www.infoworld.com/wp-content/uploads/2026/06/4188440-0-78685100-1782291777-shutterstock_1898487073.jpg?quality=50\u0026strip=all\u0026w=1024"
-    },
-    {
-        "title":  "EDB converges analytics on Postgres to support AI agents",
-        "source":  "InfoWorld",
-        "url":  "https://www.infoworld.com/article/4188484/edb-converges-analytics-on-postgres-to-support-ai-agents.html",
-        "date":  "2026-06-23",
-        "theme":  "Platforms",
-        "summary":  "EnterpriseDB introduced converged analytics for its EDB Postgres AI service, enabling AI agents to access fresh operational data without waiting for data pipelines. The architecture keeps Postgres as the operational source of truth while using Apache Iceberg as a shared catalog layer connecting to ClickHouse and Spark compute engines. This Postgres-first approach targets enterprises prioritizing data sovereignty, governance control, and predictable costs over cloud-managed platforms.",
-        "vendorLean":  "EnterpriseDB (EDB) ΓÇö article is structured around EDB\u0027s product launch and contrasts its approach favorably against Databricks\u0027 competing LTAP offering",
-        "imageUrl":  "https://www.infoworld.com/wp-content/uploads/2026/06/4188484-0-93500400-1782233141-shutterstock_1503937775.jpg"
-    },
-    {
-        "title":  "The missing layer in enterprise agentic AI",
-        "source":  "InfoWorld",
-        "url":  "https://www.infoworld.com/article/4186426/the-missing-layer-in-enterprise-agentic-ai.html",
-        "date":  "2026-06-23",
-        "theme":  "Enterprise",
-        "summary":  "Enterprise AI agent frameworks excel at coordinating tasks but lack enforcement mechanisms for policies and compliance, creating a critical governance gap. The article argues that organizations need a dedicated orchestration layer to evaluate agent actions against data locality rules, model approval lists, regulatory requirements, and audit standards before execution occurs. Without this layer, enterprises cannot safely delegate consequential decisions to autonomous agents at scale.",
-        "vendorLean":  "Kamiwaza AI ΓÇö the author is field CTO at Kamiwaza AI and the article advocates for orchestration infrastructure aligned with the company\u0027s mission",
-        "imageUrl":  "https://www.infoworld.com/wp-content/uploads/2026/06/4186426-0-88211400-1782205352-shutterstock_652926178.jpg"
-    },
-    {
-        "title":  "Is Mistral late or savvy?",
-        "source":  "InfoWorld",
-        "url":  "https://www.infoworld.com/article/4187526/is-mistral-late-or-savvy.html",
-        "date":  "2026-06-22",
-        "theme":  "Strategy",
-        "summary":  "The article argues that Mistral AI may succeed by positioning itself around enterprise-controlled, governable AI infrastructure rather than competing on raw model capability against OpenAI, Anthropic, and Google. The piece contends that \u0027good enough, governable, and your own\u0027 could outcompete frontier models in sectors demanding auditability and data sovereignty, provided Mistral can prove market demand for specialization over scale. The author frames Mistral\u0027s open-weight model strategy as a deliberate bet on enterprise compliance requirements rather than a symptom of being late to the frontier race.",
-        "vendorLean":  "Neutral",
-        "imageUrl":  "https://www.infoworld.com/wp-content/uploads/2026/06/4187526-0-09806800-1782150438-shutterstock_69103444.jpg?quality=50\u0026strip=all\u0026w=1024"
+        "imageUrl":  "https://www.infoworld.com/wp-content/uploads/2026/06/4188440-0-78685100-1782291777-shutterstock_1898487073.jpg"
     },
     {
         "title":  "AI alone won\u0027t change your business. The system running it will.",
         "source":  "Microsoft AI Blog",
         "url":  "https://blogs.microsoft.com/blog/2026/06/02/ai-alone-wont-change-your-business-the-system-running-it-will/",
         "date":  "2026-06-02",
-        "theme":  "Enterprise",
-        "summary":  "Microsoft argues that enterprise AI success depends not on models alone but on an integrated system encompassing development, contextualization, deployment, governance, and continuous improvement. The article outlines Microsoft\u0027s agent platform stackΓÇöGitHub for building agents, Microsoft IQ for business context, Foundry for runtime execution, and Agent 365 for governanceΓÇöas the connective tissue that makes AI transformative at scale. It positions the \u0027system running AI\u0027 as the true competitive differentiator for enterprises.",
-        "vendorLean":  "Microsoft ΓÇö promotes Microsoft\u0027s own agent platform stack (GitHub, Microsoft IQ, Foundry, Agent 365) as the definitive enterprise AI solution",
+        "theme":  "Strategy",
+        "summary":  "Microsoft describes a comprehensive agent platform designed to transform enterprise operations through integrated systems rather than standalone AI models. The platform encompasses six key components ΓÇö building in GitHub, contextualizing with Microsoft IQ, running on Foundry, governing via Agent 365, continuous improvement, and surfacing in Microsoft 365 ΓÇö to enable teams of agents executing production workloads. The piece argues that enterprise AI success depends on governance, security, and continuous learning built into the system architecture rather than AI capabilities alone.",
+        "vendorLean":  "Microsoft ΓÇö promotes Microsoft AI products and the Microsoft agent platform stack",
         "imageUrl":  null
     },
     {
-        "title":  "Introducing Majorana 2",
+        "title":  "Introducing Majorana 2: How Microsoft\u0027s new quantum chip was made 1,000x more reliable with Microsoft Discovery\u0027s agentic AI",
         "source":  "Microsoft AI Blog",
         "url":  "https://news.microsoft.com/source/features/innovation/majorana-2-microsoft-discovery-agentic-ai/",
         "date":  "2026-06-02",
-        "theme":  "Platforms",
-        "summary":  "Microsoft unveiled Majorana 2, a next-generation quantum chip achieving a 1,000-fold reliability improvement over its predecessor, with qubits reaching a mean lifetime of 20 seconds and a projected timeline to scalable quantum computing by 2029. The development was accelerated by Microsoft Discovery, an agentic AI platform for frontier research, now generally available as an enterprise tool. A free local app version of Microsoft Discovery is also launching alongside the announcement.",
-        "vendorLean":  "Microsoft ΓÇö showcases Microsoft\u0027s proprietary quantum hardware and its own Microsoft Discovery agentic AI platform",
-        "imageUrl":  "https://news.microsoft.com/source/wp-content/uploads/2026/06/Majorana-2-web-size_4_cropped-1900x1096.jpg"
+        "theme":  "Agents",
+        "summary":  "Microsoft unveiled Majorana 2, its next-generation topological quantum chip with qubits 1,000 times more reliable than previous versions and mean qubit lifetimes of 20 seconds. The breakthrough was achieved using agentic AI from Microsoft Discovery to manage workflows, optimize fabrication processes, and analyze complex interdisciplinary data. With this progress, Microsoft now expects to achieve a scalable quantum computer by 2029, accelerating its original timeline by approximately half.",
+        "vendorLean":  "Microsoft ΓÇö promotes Microsoft Discovery agentic AI platform and Microsoft quantum research",
+        "imageUrl":  null
+    },
+    {
+        "title":  "Microsoft Build 2025: The age of AI agents and building the open agentic web",
+        "source":  "Microsoft AI Blog",
+        "url":  "https://blogs.microsoft.com/blog/2025/05/19/microsoft-build-2025-the-age-of-ai-agents-and-building-the-open-agentic-web/",
+        "date":  "2025-05-19",
+        "theme":  "Agents",
+        "summary":  "Microsoft announced its vision for an open agentic web where AI agents autonomously perform tasks across individual, organizational, and business contexts. Key launches included a new asynchronous coding agent for GitHub Copilot, Windows AI Foundry for developers, and Azure AI Foundry Agent Service with enterprise-grade capabilities. Microsoft also introduced support for Model Context Protocol across its platforms and NLWeb, an open project to enable conversational interfaces for any website.",
+        "vendorLean":  "Microsoft ΓÇö promotes Microsoft Azure AI Foundry, GitHub Copilot, and Windows AI ecosystem",
+        "imageUrl":  null
+    },
+    {
+        "title":  "What\u0027s next in AI: 7 trends to watch in 2026",
+        "source":  "Microsoft AI Blog",
+        "url":  "https://news.microsoft.com/source/?post_type=features\u0026p=22965",
+        "date":  "2025-12-08",
+        "theme":  "Strategy",
+        "summary":  "Microsoft outlines seven emerging AI trends for 2026, emphasizing a shift from AI experimentation to real-world implementation at enterprise scale. Key trends include AI agents becoming active workplace collaborators, enhanced security measures for AI systems, AI\u0027s expansion in healthcare to address global care gaps, and AI\u0027s deeper integration into scientific research workflows. Additional focus areas cover smarter infrastructure, contextual code understanding, and quantum computing breakthroughs.",
+        "vendorLean":  "Microsoft ΓÇö promotes Microsoft\u0027s AI research agenda and product roadmap across Azure, Copilot, and research divisions",
+        "imageUrl":  null
     },
     {
         "title":  "I/O 2026: Welcome to the agentic Gemini era",
         "source":  "Google AI Blog",
         "url":  "https://blog.google/innovation-and-ai/sundar-pichai-io-2026/",
         "date":  "2026-05-19",
-        "theme":  "Strategy",
-        "summary":  "Google CEO Sundar Pichai announced at I/O 2026 a strategic pivot toward autonomous AI agents powered by Gemini models, including the launch of Gemini 3.5 Flash with improved speed and affordability. Google disclosed infrastructure investment plans reaching $180-190 billion annually to support its agentic AI ambitions, along with Gemini Spark, a personal AI assistant operating 24/7 in the background. The keynote framed the shift as the beginning of an \u0027agentic era\u0027 across Google\u0027s entire product ecosystem.",
-        "vendorLean":  "Google ΓÇö CEO keynote explicitly promotes Google\u0027s Gemini model family, Google infrastructure, and Google\u0027s strategic positioning in the agentic AI race",
-        "imageUrl":  "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/SundarKeynote-hero.width-200.format-webp.webp"
+        "theme":  "Agents",
+        "summary":  "Google CEO Sundar Pichai announced major AI advances centered on autonomous agents powered by Gemini models at Google I/O 2026. The company revealed Gemini 3.5 Flash, a faster frontier-level model, alongside new agentic features including Gemini Spark ΓÇö a 24/7 personal AI agent ΓÇö and information agents embedded in Search. Additional launches spanned Gemini Omni for video generation and new AI-powered features across YouTube, Maps, Workspace, and other Google products.",
+        "vendorLean":  "Google ΓÇö promotes Google Gemini models, Google Cloud AI, and the broader Google AI product ecosystem",
+        "imageUrl":  null
     },
     {
         "title":  "The Gemini app becomes more agentic, delivering proactive, 24/7 help",
@@ -235,19 +235,9 @@ window.ARTICLES = [
         "url":  "https://blog.google/innovation-and-ai/products/gemini-app/next-evolution-gemini-app/",
         "date":  "2026-05-19",
         "theme":  "Agents",
-        "summary":  "Google announced a major evolution of the Gemini app introducing Gemini Spark, a 24/7 personal AI agent designed to proactively manage tasks and navigate users\u0027 digital lives without being prompted. The update also includes a redesigned Neural Expressive interface, Gemini Omni for video generation, and a Daily Brief feature for personalized morning digests, with the Gemini user base now exceeding 900 million monthly users across 230 countries. The announcement positions Gemini as moving from a reactive assistant to a proactive, autonomous agent.",
-        "vendorLean":  "Google ΓÇö promotes Google\u0027s Gemini app, Gemini Spark, and Google\u0027s agentic AI capabilities exclusively",
-        "imageUrl":  "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Geminiapp_Bento_hero.width-200.format-webp.webp"
-    },
-    {
-        "title":  "Interactions API: our primary interface for Gemini models and agents",
-        "source":  "Google AI Blog",
-        "url":  "https://blog.google/innovation-and-ai/technology/developers-tools/interactions-api-general-availability/",
-        "date":  "2026-06-10",
-        "theme":  "Orchestration",
-        "summary":  "Google announced the Interactions API has reached general availability as its primary unified interface for interacting with Gemini models and agents, featuring a stable schema with new capabilities including Managed Agents, background execution, and improved tool integration. Launched in public beta in December 2025, the API replaces the legacy generateContent endpoint and is now recommended for all new Gemini projects. The announcement positions the Interactions API as the foundational orchestration layer for building and deploying AI agents on Google\u0027s platform.",
-        "vendorLean":  "Google ΓÇö promotes Google\u0027s own Interactions API and Gemini developer ecosystem as the primary path for agent orchestration",
-        "imageUrl":  "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Interactions_API_GA_final.width-200.format-webp.webp"
+        "summary":  "Google unveiled major updates to the Gemini app including Gemini 3.5 Flash for faster performance and a redesigned interface with fluid animations. The company introduced two new agents: Daily Brief for personalized morning digests and Gemini Spark, a 24/7 personal assistant that performs complex multi-step tasks across Google Workspace apps while running autonomously in the background. The update positions Gemini as a proactive AI collaborator rather than a reactive assistant.",
+        "vendorLean":  "Google ΓÇö promotes Google Gemini app, Gemini 3.5 Flash model, and Google Workspace integration",
+        "imageUrl":  null
     },
     {
         "title":  "Save time and grow your business with new Gemini tools",
@@ -255,29 +245,19 @@ window.ARTICLES = [
         "url":  "https://blog.google/innovation-and-ai/products/gemini-app/gemini-features-for-businesses/",
         "date":  "2026-06-10",
         "theme":  "Enterprise",
-        "summary":  "Google launched new Gemini features tailored for small business owners, including direct integration with Google Business Profile so the AI can access customer reviews and performance data in context. New Business notebooks provide a centralized workspace for organizing workflows, receiving proactive alerts, and generating brand-specific content. The tools aim to automate routine tasks such as review responses and profile updates while delivering actionable market insights to help small businesses grow.",
-        "vendorLean":  "Google ΓÇö promotes Google\u0027s Gemini app and Google Business Profile ecosystem exclusively for small business AI adoption",
+        "summary":  "Google introduced new Gemini features for small business owners, including a direct Google Business Profile connection that enables the AI to understand brand context and customer data. The update adds Business notebooks for organizing workflows, tracking tasks, and automating review responses and performance metric analysis. These tools, rolling out globally in June 2026, are aimed at helping entrepreneurs automate routine operations and scale with AI.",
+        "vendorLean":  "Google ΓÇö promotes Google Gemini for Business, Google Business Profile, and Google Workspace tools",
         "imageUrl":  null
     },
     {
-        "title":  "Claude Fable 5 and Claude Mythos 5",
-        "source":  "Anthropic News",
-        "url":  "https://www.anthropic.com/news/claude-fable-5-mythos-5",
-        "date":  "2026-06-09",
+        "title":  "Google advances its AMIE research medical AI from diagnosis to treatment",
+        "source":  "Google AI Blog",
+        "url":  "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-for-disease-management-in-nature/",
+        "date":  "2026-06-01",
         "theme":  "Models",
-        "summary":  "Anthropic launched Claude Fable 5, a broadly available Mythos-class model with state-of-the-art performance across software engineering, research, and vision tasks, alongside Claude Mythos 5 designed specifically for cybersecurity professionals. Both models are priced at $10 per million input tokens and $50 per million output tokens. Safety classifiers are built in to prevent misuse across cybersecurity and biology domains.",
-        "vendorLean":  "Anthropic ΓÇö positions new model releases as safety-forward breakthroughs and cites internal benchmarks",
-        "imageUrl":  "https://www-cdn.anthropic.com/images/4zrzovbb/website/b7055119423427c40a0e4d84054aed17682b50a2-2880x1620.png"
-    },
-    {
-        "title":  "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
-        "source":  "Anthropic News",
-        "url":  "https://www.anthropic.com/news/dxc-anthropic-alliance",
-        "date":  "2026-06-11",
-        "theme":  "Enterprise",
-        "summary":  "Anthropic announced a multi-year partnership with DXC Technology to deploy Claude across mission-critical infrastructure for financial institutions, airlines, and government agencies. DXC will certify thousands of engineers to integrate Claude into regulated-industry operations, focusing initially on insurance, legacy modernization, cybersecurity, and application services. The collaboration builds on DXC\u0027s own internal deployment of Claude across its 115,000-person workforce.",
-        "vendorLean":  "Anthropic ΓÇö frames the partnership as Anthropic expanding enterprise reach; DXC adoption validates Claude for regulated industries",
-        "imageUrl":  "https://www-cdn.anthropic.com/images/4zrzovbb/website/60d39963d844bc1104a780c762c540c9ba1baefe-1000x1000.svg"
+        "summary":  "Google\u0027s AMIE (Articulate Medical Intelligence Explorer) has evolved beyond initial diagnosis to support long-term disease management, with a study published in Nature demonstrating it matched primary care physicians in overall management reasoning. AMIE excelled specifically in plan preciseness and clinical guideline alignment, leveraging Gemini\u0027s long-context capabilities to reference guidelines and drug formularies in real-time patient conversations. The research represents a significant step toward AI that can serve as a sustained clinical decision-support partner rather than a one-time diagnostic tool.",
+        "vendorLean":  "Google ΓÇö promotes Google DeepMind research and Gemini model capabilities in healthcare",
+        "imageUrl":  null
     },
     {
         "title":  "TCS and Anthropic partner to bring Claude to regulated industries",
@@ -285,9 +265,19 @@ window.ARTICLES = [
         "url":  "https://www.anthropic.com/news/tcs-anthropic-partnership",
         "date":  "2026-06-12",
         "theme":  "Enterprise",
-        "summary":  "Anthropic and Tata Consultancy Services announced a strategic partnership to deploy Claude across 50,000 TCS employees in 56 countries and build AI solutions tailored to regulated sectors such as financial services and healthcare. TCS joins the Claude Partner Network and will develop industry-specific offerings including claims processing and lending advisory tools. The collaboration aims to accelerate enterprise AI adoption by combining Claude\u0027s capabilities with TCS\u0027s deep regulatory expertise.",
-        "vendorLean":  "Anthropic ΓÇö highlights Claude\u0027s enterprise credibility through a major global SI partner; TCS scale validates market reach",
+        "summary":  "Anthropic and Tata Consultancy Services announced a strategic partnership to deploy Claude across 50,000 TCS employees and develop industry-specific solutions for financial services, healthcare, and other regulated sectors. TCS will serve as customer zero, implementing Claude across engineering, finance, legal, and sales teams while building dedicated practices for clients. The collaboration leverages TCS\u0027s regulatory expertise and global reach to accelerate enterprise adoption of Claude in compliance-critical industries.",
+        "vendorLean":  "Anthropic ΓÇö promotes Claude\u0027s enterprise adoption and positions Anthropic as the preferred AI partner for regulated industries",
         "imageUrl":  "https://www-cdn.anthropic.com/images/4zrzovbb/website/1576ae23eaf481f33bd36ab468171cc69d12361a-1000x1000.svg"
+    },
+    {
+        "title":  "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on",
+        "source":  "Anthropic News",
+        "url":  "https://www.anthropic.com/news/dxc-anthropic-alliance",
+        "date":  "2026-06-11",
+        "theme":  "Enterprise",
+        "summary":  "Anthropic announced a multi-year partnership with DXC Technology to deploy Claude across mission-critical systems for banks, airlines, insurers, and government agencies. DXC will train thousands of Claude-certified engineers through Anthropic Academy to integrate the AI into regulated industry operations. The alliance focuses on insurance, legacy code modernization, cybersecurity, and application services, with Claude generating more than 95% of the code for DXC\u0027s new OASIS platform.",
+        "vendorLean":  "Anthropic ΓÇö frames Claude as the enterprise AI of choice for mission-critical regulated-industry systems",
+        "imageUrl":  "https://www-cdn.anthropic.com/images/4zrzovbb/website/60d39963d844bc1104a780c762c540c9ba1baefe-1000x1000.svg"
     },
     {
         "title":  "Introducing the Services Track and Partner Hub of the Claude Partner Network",
@@ -295,29 +285,19 @@ window.ARTICLES = [
         "url":  "https://www.anthropic.com/news/services-track-partner-hub",
         "date":  "2026-06-03",
         "theme":  "Strategy",
-        "summary":  "Anthropic launched two new components of its Claude Partner Network: a tiered Services Track (Select, Preferred, and Global Premier) measured by certified practitioners and production deployments, and a Claude Partner Hub for tracking progress and connecting customers with qualified service firms. The program is backed by a $100 million investment in partner training, technical support, and co-marketing. The move formalizes Anthropic\u0027s enterprise go-to-market channel strategy.",
-        "vendorLean":  "Anthropic ΓÇö promotes its own partner ecosystem and channel investment as competitive differentiator",
+        "summary":  "Anthropic launched two new initiatives to help enterprises deploy Claude AI in production: the Services Track creates a three-tier partner structure measuring firms on certified practitioners, production deployments, and customer endorsements. The Claude Partner Hub provides a portal where partners track progress and customers identify qualified implementation firms. Together these form a structured ecosystem to scale Claude deployment across the enterprise market.",
+        "vendorLean":  "Anthropic ΓÇö builds a certified partner ecosystem that deepens lock-in to Claude as the enterprise AI platform",
         "imageUrl":  "https://www-cdn.anthropic.com/images/4zrzovbb/website/6905c83d0735e1bc430025fdd1748d1406079036-1000x1000.svg"
     },
     {
-        "title":  "Amazon Bedrock AgentCore harness is now generally available: Go from idea to production-grade agent in minutes",
-        "source":  "AWS Machine Learning Blog",
-        "url":  "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-harness-is-now-generally-available-go-from-idea-to-production-grade-agent-in-minutes/",
-        "date":  "2026-06-18",
-        "theme":  "Agents",
-        "summary":  "AWS announced general availability of Amazon Bedrock AgentCore harness, a managed service that lets developers deploy production-grade AI agents with just two API calls by abstracting away runtime, memory, tool integration, and observability. The harness supports multiple AI model providers and allows mid-session model switching, dramatically lowering the barrier to production agent deployment. It positions Bedrock as a full-stack platform for enterprise agentic workloads.",
-        "vendorLean":  "AWS ΓÇö promotes Amazon Bedrock as the fastest path from prototype to production agent; benchmarks and ease-of-use claims favor the AWS platform",
-        "imageUrl":  "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/11/ML-20804-1.png"
-    },
-    {
-        "title":  "Introducing Web Search on Amazon Bedrock AgentCore",
-        "source":  "AWS Machine Learning Blog",
-        "url":  "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-agentcore/",
-        "date":  "2026-06-19",
-        "theme":  "Platforms",
-        "summary":  "Amazon launched a fully managed Web Search capability within Bedrock AgentCore, giving AI agents access to a purpose-built web index spanning tens of billions of documents that refreshes within minutes. User queries remain private within AWS infrastructure, addressing enterprise data sovereignty concerns. The feature is priced at $7 per 1,000 queries and requires no additional infrastructure for teams already on Bedrock.",
-        "vendorLean":  "AWS ΓÇö promotes a proprietary web index as superior to third-party search integrations, positioning AWS infrastructure as the secure enterprise default",
-        "imageUrl":  null
+        "title":  "Introducing Claude Opus 4.8",
+        "source":  "Anthropic News",
+        "url":  "https://www.anthropic.com/news/claude-opus-4-8",
+        "date":  "2026-05-28",
+        "theme":  "Models",
+        "summary":  "Anthropic released Claude Opus 4.8, an upgraded model featuring improvements in coding, reasoning, and agentic capabilities at the same price as its predecessor. The new model offers enhanced reliability and honesty, particularly in flagging uncertainties, and introduces dynamic workflows for handling large-scale tasks. New effort controls let users balance response quality with speed, making it more adaptable for diverse enterprise workloads.",
+        "vendorLean":  "Anthropic ΓÇö positions Opus 4.8 as a capability and value improvement over competing frontier models",
+        "imageUrl":  "https://www-cdn.anthropic.com/images/4zrzovbb/website/0eaa0ed2dce9810169112e1c77de2585fcf1f5c2-2880x1620.jpg"
     },
     {
         "title":  "How frontier teams are reinventing AI-native development",
@@ -325,19 +305,39 @@ window.ARTICLES = [
         "url":  "https://aws.amazon.com/blogs/machine-learning/how-frontier-teams-are-reinventing-ai-native-development/",
         "date":  "2026-06-10",
         "theme":  "Strategy",
-        "summary":  "The article documents how leading engineering teams are restructuring workflows around AI agents to achieve 4.5x to 10x productivity gains, emphasizing that workflow transformation matters as much as the underlying technology. Five key practices distinguish high-performing AI-native teams, including investing in agent context and streamlining processes for production readiness. The piece frames AI-native development as a strategic organizational shift, not simply a tooling upgrade.",
-        "vendorLean":  "AWS ΓÇö published on the AWS ML blog and implicitly positions AWS tools as the platform enabling these productivity gains",
+        "summary":  "Leading engineering teams are restructuring workflows around AI agents rather than using AI as a simple coding assistant, achieving productivity gains of 4.5x to over 10x. Success requires deliberate workflow changes including investing in agent context, maintaining clear task specifications, and enabling autonomous parallel work. The author outlines five key practices such as asynchronous agent parallelism and shifting testing earlier in the development cycle.",
+        "vendorLean":  "AWS ΓÇö promotes AI-native development patterns that align with AWS and Amazon Bedrock tooling",
         "imageUrl":  null
     },
     {
-        "title":  "Build a protein research copilot with Amazon Bedrock AgentCore",
+        "title":  "Shared infrastructure, isolated tenants: Pool model multi-tenancy with Amazon Bedrock AgentCore",
         "source":  "AWS Machine Learning Blog",
-        "url":  "https://aws.amazon.com/blogs/machine-learning/build-a-protein-research-copilot-with-amazon-bedrock-agentcore/",
+        "url":  "https://aws.amazon.com/blogs/machine-learning/shared-infrastructure-isolated-tenants-pool-model-multi-tenancy-with-amazon-bedrock-agentcore/",
         "date":  "2026-06-23",
+        "theme":  "Platforms",
+        "summary":  "This post demonstrates how to architect production-ready multi-tenant AI applications using Amazon Bedrock AgentCore with complete tenant isolation via a three-tier hierarchy. Key patterns include data segregation via S3 prefixes, per-tier cost attribution through Bedrock Projects, and rate limiting enforced at the API Gateway level. The architecture is illustrated through a healthcare system serving multiple clinics with differentiated service levels.",
+        "vendorLean":  "AWS ΓÇö promotes Amazon Bedrock AgentCore as the preferred platform for enterprise multi-tenant AI deployments",
+        "imageUrl":  null
+    },
+    {
+        "title":  "Introducing Web Search on Amazon Bedrock AgentCore",
+        "source":  "AWS Machine Learning Blog",
+        "url":  "https://aws.amazon.com/blogs/machine-learning/introducing-web-search-on-amazon-bedrock-agentcore/",
+        "date":  "2026-06-19",
         "theme":  "Agents",
-        "summary":  "AWS published a technical guide demonstrating how to build an AI copilot for protein research using the Strands Agents SDK and Amazon Bedrock, enabling natural-language queries against a vector similarity search engine backed by ESM-C 300M embeddings in Aurora PostgreSQL with pgvector. The solution orchestrates three specialized tools deployed on AWS Fargate with a Streamlit frontend, reducing hours of manual database searches to under a minute per query. The architecture showcases Bedrock as an integrated stack for domain-specific scientific AI agents.",
-        "vendorLean":  "AWS ΓÇö showcases multiple AWS services (Bedrock, Fargate, Aurora) as an integrated stack; serves as a platform adoption tutorial",
-        "imageUrl":  "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/03/ML-19630-1.jpeg"
+        "summary":  "Amazon Bedrock AgentCore now offers Web Search, a managed tool enabling AI agents to access current web information without infrastructure overhead, using Amazon\u0027s own index spanning tens of billions of documents refreshed within minutes. Customer queries remain private within AWS infrastructure, addressing both freshness and data-sovereignty concerns for enterprise deployments. The feature integrates with MCP-compatible frameworks at $7 per 1,000 queries and directly solves the knowledge-cutoff limitation of deployed agents.",
+        "vendorLean":  "AWS ΓÇö promotes Amazon Bedrock AgentCore as a comprehensive, private, enterprise-grade agent platform over third-party alternatives",
+        "imageUrl":  null
+    },
+    {
+        "title":  "Building pay-per-intelligence for AI agents: How Ampersend uses Amazon Bedrock AgentCore Payments",
+        "source":  "AWS Machine Learning Blog",
+        "url":  "https://aws.amazon.com/blogs/machine-learning/building-pay-per-intelligence-for-ai-agents-how-ampersend-uses-amazon-bedrock-agentcore-payments/",
+        "date":  "2026-06-22",
+        "theme":  "Orchestration",
+        "summary":  "Ampersend built a payment routing layer using Amazon Bedrock AgentCore Payments that enables AI agents to autonomously pay for intelligence services across multiple model providers through a single integration. The system uses a two-hop payment pattern settling with upstream providers on the Base network via USDC, eliminating custom billing, credential management, and payment orchestration. This reduced implementation time from an estimated 3-4 months to two weeks, illustrating the platform value of AgentCore for agentic workflows.",
+        "vendorLean":  "AWS ΓÇö positions Amazon Bedrock AgentCore Payments as the infrastructure layer for emerging agent-to-agent commerce",
+        "imageUrl":  null
     },
     {
         "title":  "How Businesses Are Building Specialized AI They Can Trust",
@@ -345,19 +345,9 @@ window.ARTICLES = [
         "url":  "https://blogs.nvidia.com/blog/nvidia-agent-toolkit-open-models-tools-skills-secure-runtime-ai-agents/",
         "date":  "2026-06-23",
         "theme":  "Agents",
-        "summary":  "NVIDIA introduced the NVIDIA Agent Toolkit, a suite of models, tools, skills, and secure runtime infrastructure enabling enterprises to build customized, domain-specific AI agents for industries including life sciences, healthcare, and cybersecurity. The toolkit is designed to help organizations deploy trustworthy digital coworkers that integrate with existing enterprise workflows. NVIDIA frames the toolkit as the missing layer between general-purpose AI models and production enterprise deployments.",
-        "vendorLean":  "NVIDIA ΓÇö promotes its own Agent Toolkit and hardware ecosystem as the foundation for enterprise-grade agentic AI",
+        "summary":  "NVIDIA introduced Agent Toolkit, an open foundation for building domain-specific AI agents that enterprises can customize and deploy safely, combining models, tools, skills, and secure runtime capabilities. The toolkit enables specialized AI coworkers across industries including life sciences, healthcare, and cybersecurity. Companies such as CrowdStrike, Cadence, and Synopsys are already using these capabilities for tasks ranging from drug discovery to autonomous chip design.",
+        "vendorLean":  "NVIDIA ΓÇö promotes NVIDIA Agent Toolkit and GPU infrastructure as the foundational layer for enterprise AI agent deployment",
         "imageUrl":  "https://blogs.nvidia.com/wp-content/uploads/2026/06/agentic-ai-agent-toolkit-kv-r3b-1920x1080-2-1280x720.png"
-    },
-    {
-        "title":  "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
-        "source":  "NVIDIA AI Blog",
-        "url":  "https://blogs.nvidia.com/blog/telecom-ai-agents-dtw-ignite-2026/",
-        "date":  "2026-06-22",
-        "theme":  "Agents",
-        "summary":  "NVIDIA showcased autonomous AI agents for telecom operations at DTW Ignite 2026, demonstrating proactive network monitoring and coordinated change management across network, IT, and business systems. Three capabilities were highlighted: synthetic data generation for privacy-safe training, secure agent runtimes with policy guardrails, and GPU-accelerated simulation for validating autonomous recommendations before live deployment. The announcement targets telecom operators seeking always-on, autonomous network management.",
-        "vendorLean":  "NVIDIA ΓÇö positions NVIDIA GPU infrastructure and agent runtime as the secure backbone for telecom AI automation",
-        "imageUrl":  "https://blogs.nvidia.com/wp-content/uploads/2026/06/telco-tm-forum-1920x1080-1-1280x720.jpg"
     },
     {
         "title":  "NVIDIA and AWS Collaborate to Bring AI to Production at Scale",
@@ -365,19 +355,19 @@ window.ARTICLES = [
         "url":  "https://blogs.nvidia.com/blog/nvidia-aws-ai-production-scale/",
         "date":  "2026-06-23",
         "theme":  "Platforms",
-        "summary":  "NVIDIA and AWS announced a joint infrastructure collaboration introducing EC2 G7 instances with NVIDIA RTX PRO 4500 Blackwell GPUs, delivering up to 4.6x AI inference performance improvements over prior generations. The partnership also integrates NVIDIA\u0027s cuVS library into Amazon OpenSearch Serverless for GPU-accelerated vector search, achieving up to 10x faster indexing at one-quarter the cost of CPU-only systems. Together the announcements target enterprises scaling AI inference and retrieval workloads on AWS.",
-        "vendorLean":  "NVIDIA ΓÇö centers NVIDIA GPU capabilities (Blackwell, cuVS) as the performance differentiator while positioning AWS as preferred cloud partner",
+        "summary":  "NVIDIA and AWS announced three joint initiatives to accelerate enterprise AI production: new EC2 G7 instances with NVIDIA RTX PRO 4500 Blackwell GPUs delivering up to 4.6x faster AI inference, GPU-accelerated vector search in Amazon OpenSearch Serverless via NVIDIA\u0027s cuVS library, and NVIDIA Exemplar Cloud status for GB300 training workloads. The partnership targets the full AI production stack from training through inference and retrieval. This deepens the NVIDIA-AWS integration for enterprises running large-scale AI workloads on AWS.",
+        "vendorLean":  "NVIDIA ΓÇö co-authored with AWS, promotes NVIDIA Blackwell GPU hardware and cuVS as essential components of production-scale enterprise AI",
         "imageUrl":  "https://blogs.nvidia.com/wp-content/uploads/2026/06/logo-lockup-tech-blog-aws-1920x1080-2-1280x720.jpg"
     },
     {
-        "title":  "NVIDIA Partners With Microsoft on Unified Stack for Agentic AI Deployment",
+        "title":  "NVIDIA Brings Trusted, 24/7 AI Agents to Telecom Operations",
         "source":  "NVIDIA AI Blog",
-        "url":  "https://blogs.nvidia.com/blog/microsoft-build-windows-local-cloud-devices/",
-        "date":  "2026-06-02",
-        "theme":  "Orchestration",
-        "summary":  "NVIDIA and Microsoft announced an expanded partnership delivering a unified computing stack for AI agents spanning Windows PCs, Azure cloud, and local deployments. The collaboration includes RTX Spark laptops, DGX Station for Windows, and Azure services integrating NVIDIA models and GPU-accelerated data warehouses to support enterprise-scale agentic AI. The unified stack targets organizations that need consistent agent orchestration across edge, local, and cloud environments.",
-        "vendorLean":  "NVIDIA ΓÇö promotes NVIDIA hardware (RTX Spark, DGX Station, Blackwell GPUs) as the compute layer across Microsoft\u0027s ecosystem",
-        "imageUrl":  "https://blogs.nvidia.com/wp-content/uploads/2026/06/logo-lockup-corp-blog-microsoft-1280x680-4999350.png"
+        "url":  "https://blogs.nvidia.com/blog/telecom-ai-agents-dtw-ignite-2026/",
+        "date":  "2026-06-22",
+        "theme":  "Agents",
+        "summary":  "At DTW Ignite 2026, NVIDIA and partners demonstrated how telecom operators can build autonomous networks using AI agents, synthetic data, and secure runtimes for functions including network management, customer care, and operations. Agents can proactively identify problems and coordinate network changes while maintaining human oversight and policy compliance. The showcase illustrates NVIDIA\u0027s push to bring agentic AI into highly regulated, 24/7 operational environments.",
+        "vendorLean":  "NVIDIA ΓÇö promotes NVIDIA\u0027s AI platform, synthetic data tools, and secure runtime as the stack for enterprise telecom automation",
+        "imageUrl":  "https://blogs.nvidia.com/wp-content/uploads/2026/06/telco-tm-forum-1920x1080-1-1280x720.jpg"
     },
     {
         "title":  "Building \u0027idiot proof\u0027 systems is not the answer",
@@ -385,17 +375,27 @@ window.ARTICLES = [
         "url":  "https://www.cio.com/article/4188202/building-idiot-proof-systems-is-not-the-answer.html",
         "date":  "2026-06-23",
         "theme":  "Strategy",
-        "summary":  "CIOs must invest in stakeholder education and meaningful narratives rather than relying on foolproof systems alone. Knowledge training, data visualization, and mission-aligned storytelling are essential for helping users extract full value from AI and technology investments. The article argues that dumbing down systems sacrifices capability and long-term value.",
+        "summary":  "CIOs must invest in stakeholder education rather than attempting to create foolproof systems, as knowledge and understanding drive technology success. The article emphasizes that knowledge pumping paired with compelling narratives about how technology solves business problems motivates adoption. A concerning gap exists where 60% of companies deploy AI tools without providing adequate employee training.",
         "vendorLean":  "Neutral",
-        "imageUrl":  "https://www.cio.com/wp-content/uploads/2026/06/4188202-0-37622000-1782207163-ai-agents-agentic-16x9-shutterstock_2619591627.jpg"
+        "imageUrl":  "https://www.cio.com/wp-content/uploads/2026/06/4188202-0-37622000-1782207163-ai-agents-agentic-16x9-shutterstock_2619591627.jpg?quality=50\u0026strip=all\u0026w=1024"
+    },
+    {
+        "title":  "The 8 biggest issues IT faces today",
+        "source":  "CIO.com",
+        "url":  "https://www.cio.com/article/228199/the-12-biggest-issues-it-faces-today.html",
+        "date":  "2026-06-22",
+        "theme":  "Enterprise",
+        "summary":  "CIOs today confront multiple critical challenges, with AI value realization emerging as the top priority alongside persistent cybersecurity threats. The article explores eight major issues shaping IT leadership, from modernizing legacy systems to evolving the CIO role into an enterprise transformation leader. AI consistently threads through each challenge, from scaling adoption and defending against AI-enabled attacks to containing shadow AI.",
+        "vendorLean":  "Neutral",
+        "imageUrl":  "https://www.cio.com/wp-content/uploads/2026/06/228199-0-15428200-1782122827-Issues-facing-IT-shutterstock_2643734389.jpg?quality=50\u0026strip=all\u0026w=1024"
     },
     {
         "title":  "A personal journey to the next era of 10X",
         "source":  "CIO.com",
         "url":  "https://www.cio.com/article/4185231/a-personal-journey-to-the-next-era-of-10x.html",
         "date":  "2026-06-16",
-        "theme":  "Enterprise",
-        "summary":  "AI-native development is transforming enterprise software creation by making applications conversational and accessible to business users without deep technical knowledge. Rather than forcing users to learn complex systems, AI now adapts to user language, enabling business users to turn ideas into operational solutions. This shift represents a decades-long convergence of innovation aimed at closing the gap between conception and execution.",
+        "theme":  "Platforms",
+        "summary":  "Enterprise software development has evolved from traditional coding through visual platforms, low-code, and no-code solutions toward AI-native development. The author argues that AI coding agents and conversational interfaces are fundamentally changing software creation by allowing business users to turn ideas directly into applications. Organizations that successfully adapt will compete not on development team size, but on their capacity to operationalize innovation continuously.",
         "vendorLean":  "Neutral",
         "imageUrl":  "https://www.cio.com/wp-content/uploads/2026/06/4185231-0-89943900-1781604130-skye-studios-NDLLFxTELrU-unsplash.jpg"
     },
@@ -405,19 +405,39 @@ window.ARTICLES = [
         "url":  "https://www.cio.com/article/4166851/coherence-where-leadership-and-ai-success-intersect.html",
         "date":  "2026-05-07",
         "theme":  "Strategy",
-        "summary":  "BNY\u0027s CIO Leigh-Ann Russell discusses how leadership discipline through \u0027coherence\u0027 enables organizations to scale AI impact without fragmentation. She explains how clear strategy, talent development, and balanced innovation governance are essential to preventing AI from amplifying organizational chaos. The article frames AI success as fundamentally a leadership and organizational alignment challenge.",
+        "summary":  "BNY\u0027s CIO Leigh-Ann Russell discusses how leadership discipline and coherence are essential for scaling AI impact without creating organizational fragmentation. She emphasizes balancing innovation with control through a centralized AI platform, enabling 220+ AI solutions in production and 140 digital autonomous employees. Russell argues that maintaining conviction while remaining adaptable to rapid change is the central tension leaders must navigate in today\u0027s AI-driven environment.",
         "vendorLean":  "Neutral",
-        "imageUrl":  "https://www.cio.com/wp-content/uploads/2026/05/4166851-0-93494400-1778146331-leighann-russell-stylized_1600x900px.jpg?quality=50\u0026strip=all\u0026w=1024"
+        "imageUrl":  null
     },
     {
-        "title":  "Demand for AI-ready coders skyrockets in 5 years",
+        "title":  "AI coding will soon get pricier than human developers",
         "source":  "CIO Dive",
-        "url":  "https://www.ciodive.com/news/randstad-digital-AI-talent-software-development/823580/",
-        "date":  "2026-06-23",
+        "url":  "https://www.ciodive.com/news/ai-spending-outpacing-human-developers/823690/",
+        "date":  "2026-06-24",
         "theme":  "Enterprise",
-        "summary":  "According to Randstad Digital\u0027s analysis of 35 million job postings since 2021, positions for software developers with AI expertise have expanded by nearly 600%, significantly outpacing traditional developer roles which grew only 28%. The surge reflects widespread enterprise adoption of AI technologies and highlights growing organizational focus on trustworthy AI implementation. The data signals a structural shift in how enterprises are building and staffing their technology functions.",
+        "summary":  "Gartner predicts that AI coding costs will exceed average developer salaries by 2028 as token-based pricing models replace subscription services. Enterprise leaders struggle to forecast spending due to lack of transparency in token consumption calculations. Without proper governance and visibility into AI agent usage, organizations risk significant budget overruns while failing to measure business impact.",
         "vendorLean":  "Neutral",
-        "imageUrl":  "https://imgproxy.divecdn.com/WH9JE3Mo11ovMUahkZ1UNyOj0fy3NnBDobKzC9h0oDo/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNDYwNjg4MzI0LmpwZw==.webp"
+        "imageUrl":  "https://imgproxy.divecdn.com/gGWrqlY9th7ZinbrWBLYgIiOiFpQcCu-D9P_94rZJ8c/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjA1MTE4MDI1LmpwZw==.webp"
+    },
+    {
+        "title":  "Linux Foundation prepares open standard for AI agent verification",
+        "source":  "CIO Dive",
+        "url":  "https://www.ciodive.com/news/linux-foundation-prepares-open-standard-ai-agent-verification/823691/",
+        "date":  "2026-06-24",
+        "theme":  "Agents",
+        "summary":  "The Linux Foundation is developing the Agent Name Service, an open standard built on DNS infrastructure to securely identify and verify AI agents operating across the internet. This initiative addresses growing enterprise challenges in authenticating and governing autonomous agents at scale, as governance frameworks lag behind rapid agentic AI deployment across organizations. The standard aims to bring accountability and trust to multi-agent ecosystems.",
+        "vendorLean":  "Linux Foundation leans open-source/vendor-neutral",
+        "imageUrl":  "https://imgproxy.divecdn.com/kCge1hXLR9Yglb4agli-P01AyIfNnqiJ20hMEF7sxMA/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjQwNDQ3MzU1LmpwZw==.webp"
+    },
+    {
+        "title":  "What enterprise CIOs can learn from the public sector on AI spending",
+        "source":  "CIO Dive",
+        "url":  "https://www.ciodive.com/news/enterprise-cios-learn-public-sector-spending/823576/",
+        "date":  "2026-06-24",
+        "theme":  "Strategy",
+        "summary":  "New York\u0027s CIO Dru Rai shares lessons from government\u0027s cost-conscious approach to AI investment, advocating for a try-and-fail-fast strategy in controlled environments to identify problematic pilots early. Rather than racing to be first, Rai emphasizes finding sustainable solutions to maximize limited budgets. The public sector approach offers a discipline model for enterprise CIOs facing mounting pressure to demonstrate AI ROI.",
+        "vendorLean":  "Neutral",
+        "imageUrl":  null
     },
     {
         "title":  "Operating models, outdated systems block companies from AI success",
@@ -425,39 +445,9 @@ window.ARTICLES = [
         "url":  "https://www.ciodive.com/news/operating-models-modernize-companies-ai-success/823440/",
         "date":  "2026-06-22",
         "theme":  "Enterprise",
-        "summary":  "A Publicis Sapient survey reveals that enterprises struggle to gain measurable value from AI investments due to organizational and technical barriers. While 70% of respondents expect significant AI scaling within two years, only 20% believe their organizations are equipped to handle it, with legacy systems and outdated operating models being the primary obstacles. The findings underscore that AI transformation requires deep operational modernization, not just technology adoption.",
-        "vendorLean":  "Publicis Sapient ΓÇö promotes its own survey findings to position the firm as an enterprise transformation authority",
+        "summary":  "A Publicis Sapient survey of 1,550 enterprise technology decision-makers reveals that while over 70% of U.S. respondents expect significant AI scaling within the next year or two, only 20% believe their organizations are equipped to handle it. The report identifies legacy systems, fragmented data, and outdated operating models as primary obstacles preventing enterprises from achieving meaningful business value from their AI investments.",
+        "vendorLean":  "Publicis Sapient leans vendor ΓÇö consulting firm promoting transformation services",
         "imageUrl":  "https://imgproxy.divecdn.com/hJ_MXVZvpF5d2FX068PpiYqZGZFlpxrFHo_Oa4n0vmE/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMTcyMjQ5MzYwLmpwZw==.webp"
-    },
-    {
-        "title":  "How AI pilots successfully scale to production",
-        "source":  "CIO Dive",
-        "url":  "https://www.ciodive.com/news/ai-pilots-scale-success/823324/",
-        "date":  "2026-06-18",
-        "theme":  "Strategy",
-        "summary":  "Organizations succeeding with AI implementations prioritize building trust through solid data foundations and starting with lower-stakes use cases before expanding. Key strategies include measuring ROI while managing risk, sharing results across teams, and maintaining governance controls like human-in-the-loop protocols as projects scale. The article traces a maturity arc from simple automation toward complex agentic workflows.",
-        "vendorLean":  "Neutral",
-        "imageUrl":  "https://imgproxy.divecdn.com/hVVIKRFF-gYGS3UmMUHCY4ovB0i6cHcZScXiXEO-T0k/g:ce/rs:fill:1200:675:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9JTUdfNTc5Ml9BSUF5Z1hiLmpwZw==.webp"
-    },
-    {
-        "title":  "Google DeepMind is worried about what happens when millions of agents start to interact",
-        "source":  "MIT Technology Review",
-        "url":  "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
-        "date":  "2026-06-11",
-        "theme":  "Orchestration",
-        "summary":  "Google DeepMind is funding a $10 million research initiative to study the potential dangers of multiple AI agents interacting simultaneously at scale. The firm warns that autonomous agents following instructions from other agents could create new cybersecurity risks including scams and prompt injection attacks. The research emphasizes the need for simulation-based safety frameworks before widespread multi-agent deployment.",
-        "vendorLean":  "Google DeepMind ΓÇö highlights DeepMind\u0027s own $10M safety research initiative, positioning the company as a responsible leader in agent orchestration",
-        "imageUrl":  "https://wp.technologyreview.com/wp-content/uploads/2026/06/corralling-agents.jpg"
-    },
-    {
-        "title":  "Three things to watch amid Anthropic\u0027s latest feud with the government",
-        "source":  "MIT Technology Review",
-        "url":  "https://www.technologyreview.com/2026/06/22/1139424/three-things-to-watch-amid-anthropics-latest-feud-with-the-government/",
-        "date":  "2026-06-22",
-        "theme":  "Philosophy",
-        "summary":  "Anthropic faced government export controls after releasing its Fable AI model, which excels at coding tasks and triggered national security concerns. The standoff raises broader questions about AI safety oversight, the regulatory framework for frontier model releases, and competitive advantages that may flow to Chinese open-source models operating without such constraints. The article frames the dispute as a pivotal test case for how governments will manage advanced AI development.",
-        "vendorLean":  "Neutral",
-        "imageUrl":  "https://wp.technologyreview.com/wp-content/uploads/2026/06/WH-v-Anthropic.jpg"
     },
     {
         "title":  "A startup claims it broke through a bottleneck that\u0027s holding back LLMs",
@@ -465,9 +455,39 @@ window.ARTICLES = [
         "url":  "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/",
         "date":  "2026-06-19",
         "theme":  "Models",
-        "summary":  "Miami-based startup Subquadratic claims to have solved a core mathematical bottleneck in large language models with SubQ, a sparse-attention model that is faster, cheaper, and more energy-efficient than dense-attention competitors. Independent testing by Appen validates many of the company\u0027s claims, though skeptics note the model uses pre-trained weights and remains unavailable for widespread testing. The article examines the technical promise and the cautious reception from the broader AI research community.",
-        "vendorLean":  "Subquadratic ΓÇö centers on the startup\u0027s own claims and positions SubQ as a breakthrough, though skeptical voices are included",
+        "summary":  "Miami-based AI startup Subquadratic emerged from stealth claiming to have solved a long-standing mathematical limitation in large language models through sparse attention technology. The company\u0027s SubQ model reportedly operates 56 times faster than competing approaches while matching performance on coding tasks. Skepticism remains about whether the breakthrough justifies its boldest claims, but the approach could have significant implications for enterprise AI cost and performance.",
+        "vendorLean":  "Subquadratic leans promotional ΓÇö startup seeking investment and adoption",
         "imageUrl":  "https://wp.technologyreview.com/wp-content/uploads/2026/06/cheetah-speed2a.jpg"
+    },
+    {
+        "title":  "Google DeepMind is worried about what happens when millions of agents start to interact",
+        "source":  "MIT Technology Review",
+        "url":  "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/",
+        "date":  "2026-06-11",
+        "theme":  "Orchestration",
+        "summary":  "Google DeepMind is funding a $10 million research initiative to study the risks posed by multiple AI agents interacting simultaneously online. Researchers are concerned about emerging safety challenges such as scams, prompt injection attacks, and cyberattacks that could escalate as agent deployment becomes widespread. The funding aims to establish a new field of multi-agent safety research extending beyond corporate labs.",
+        "vendorLean":  "Google DeepMind leans toward Google\u0027s research agenda and ecosystem",
+        "imageUrl":  "https://wp.technologyreview.com/wp-content/uploads/2026/06/corralling-agents.jpg"
+    },
+    {
+        "title":  "Anthropic\u0027s Code with Claude showed off coding\u0027s future ΓÇö whether you like it or not",
+        "source":  "MIT Technology Review",
+        "url":  "https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/",
+        "date":  "2026-05-21",
+        "theme":  "Platforms",
+        "summary":  "At Anthropic\u0027s Code with Claude developer event in London, nearly half the attendees reported shipping pull requests entirely written by Claude without reading the code. The article explores how AI coding tools have fundamentally transformed software development, with companies like Anthropic and OpenAI claiming their developers now write minimal code by hand. Concerns persist among developers about security vulnerabilities, skill degradation, and the pressure to deploy AI-generated code without proper oversight.",
+        "vendorLean":  "Anthropic leans promotional toward Claude platform adoption",
+        "imageUrl":  "https://wp.technologyreview.com/wp-content/uploads/2026/05/Katelyn-Lesse-Anthropic-Head-of-Engineering-Claude-Platform-1.jpg"
+    },
+    {
+        "title":  "The era of AI malaise",
+        "source":  "MIT Technology Review",
+        "url":  "https://www.technologyreview.com/2026/04/21/1135921/ai-malaise-artificial-intelligence-public-sentiment/",
+        "date":  "2026-04-21",
+        "theme":  "Philosophy",
+        "summary":  "The article compares current uncertainty about AI\u0027s societal impact to early pandemic confusion, exploring widespread anxiety about the technology\u0027s effects on employment, creativity, and daily life. Author Mat Honan argues that while AI is becoming ubiquitous, we lack adequate tools to track, understand, and predict its consequences. The public remains in a state of uneasy malaise about an inevitable but unclear AI-driven future.",
+        "vendorLean":  "Neutral",
+        "imageUrl":  "https://wp.technologyreview.com/wp-content/uploads/2026/04/Maxomatic-MIT-AI-Right-Now-Feat-story.jpg"
     }
 ];
-window.UPDATED = "June 24, 2026";
+window.UPDATED = "June 25, 2026";
