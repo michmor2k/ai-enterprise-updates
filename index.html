@@ -422,6 +422,10 @@
   .month-section { margin-bottom:34px; }
   .month-header { font-size:15px; font-weight:700; letter-spacing:.02em; color:var(--text); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
   .month-header .mcount { font-size:12px; font-weight:600; color:var(--text-faint); background:var(--surface); border:1px solid var(--border); border-radius:999px; padding:2px 9px; }
+
+  .exec-summary { background:rgba(110,168,255,.07); border:1px solid rgba(110,168,255,.18); border-radius:10px; padding:11px 13px; margin:0 0 14px; flex:1; }
+  .exec-summary .exec-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--accent); margin-bottom:6px; display:flex; align-items:center; gap:5px; }
+  .exec-summary p { margin:0; font-size:13px; line-height:1.55; color:var(--text-dim); }
 </style>
 </head>
 <body>
@@ -614,7 +618,9 @@ function cardHTML(a, i){
         <span>${esc(fmtDate(a.date))}</span>
       </div>
       <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></h3>
-      <p class="summary">${esc(a.summary)}</p>
+      ${state.view==='saved'
+        ? `<div class="exec-summary"><div class="exec-label">&#128203; Executive Summary</div><p>${esc(a.execSummary || a.summary)}</p></div>`
+        : `<p class="summary">${esc(a.summary)}</p>`}
       ${leanNote}
       <div class="card-foot">
         <a class="read-link" href="${esc(a.url)}" target="_blank" rel="noopener">Read article
