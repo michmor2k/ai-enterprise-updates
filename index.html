@@ -446,6 +446,9 @@
   .repost-tag { font-size:11px; font-weight:700; color:var(--text-faint); }
   .repost-badge { display:inline-flex; align-items:center; gap:4px; font-size:10.5px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:var(--accent-2); background:rgba(169,139,255,.13); border:1px solid rgba(169,139,255,.32); border-radius:6px; padding:2px 7px; white-space:nowrap; }
   .post-head .head-right { margin-left:auto; display:flex; align-items:center; gap:6px; }
+  .post-links { display:flex; flex-direction:column; gap:5px; }
+  .post-link { display:inline-flex; align-items:center; gap:6px; font-size:12px; color:var(--accent); text-decoration:none; background:rgba(110,168,255,.08); border:1px solid rgba(110,168,255,.2); border-radius:8px; padding:5px 10px; word-break:break-all; }
+  .post-link:hover { background:rgba(110,168,255,.16); }
 </style>
 </head>
 <body>
@@ -664,6 +667,7 @@ function matchesFilters(a){
   return true;
 }
 
+function linkLabel(u){ try { return u.replace(/^https?:\/\//,"").replace(/\/$/,"").slice(0,46); } catch(e){ return "Link"; } }
 function postCardHTML(p){
   const ini = (p.author || p.handle || "?").split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase();
   const when = p.date ? fmtDate(String(p.date).slice(0,10)) : "";
@@ -682,6 +686,7 @@ function postCardHTML(p){
     </div>
     <div class="post-text">${esc((p.text||"").replace(/^🔁\s*/,""))}</div>
     ${(p.img && p.img.length) ? `<div class="post-media${p.img.length>1?' multi':''}">${p.img.map(src=>`<a href="${esc(url)}" target="_blank" rel="noopener"><img src="${esc(src)}" alt="post media" loading="lazy" referrerpolicy="no-referrer" onerror="var m=this.closest('.post-media'); if(m) m.style.display='none';"></a>`).join("")}</div>` : ""}
+    ${(p.links && p.links.length) ? `<div class="post-links">${p.links.map(l=>`<a class="post-link" href="${esc(l)}" target="_blank" rel="noopener">&#128279; ${esc(linkLabel(l))}</a>`).join("")}</div>` : ""}
     <div class="post-foot">
       <span>${esc(when)}</span>
       <a href="${esc(url)}" target="_blank" rel="noopener">View on X &rarr;</a>
