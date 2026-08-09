@@ -432,7 +432,7 @@
   .post-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:16px 17px; display:flex; flex-direction:column; gap:11px; transition:transform .18s ease, border-color .18s ease, box-shadow .18s ease; animation:fadeUp .4s ease both; }
   .post-card:hover { transform:translateY(-3px); border-color:var(--border-strong); box-shadow:var(--shadow); }
   .post-head { display:flex; align-items:center; gap:10px; }
-  .post-avatar { width:38px; height:38px; border-radius:50%; background:linear-gradient(135deg,#3b9dff,#a98bff); display:flex; align-items:center; justify-content:center; font-weight:800; color:#fff; font-size:14px; flex-shrink:0; }
+  .post-avatar { width:42px; height:42px; border-radius:50%; background:linear-gradient(135deg,#3b9dff,#a98bff); display:flex; align-items:center; justify-content:center; font-weight:800; color:#fff; font-size:15px; letter-spacing:-.01em; flex-shrink:0; box-shadow:0 0 0 2px rgba(255,255,255,.16), 0 3px 10px rgba(0,0,0,.4); text-shadow:0 1px 2px rgba(0,0,0,.35); }
   .post-author { font-weight:700; font-size:14px; color:var(--text); line-height:1.25; }
   .post-handle { font-size:12.5px; color:var(--text-faint); }
   .x-badge { margin-left:auto; font-size:13px; font-weight:800; color:var(--text-faint); border:1px solid var(--border); border-radius:7px; padding:2px 8px; }
@@ -669,13 +669,19 @@ function matchesFilters(a){
 }
 
 function linkLabel(u){ try { return u.replace(/^https?:\/\//,"").replace(/\/$/,"").slice(0,46); } catch(e){ return "Link"; } }
+function avatarStyle(seed){
+  var s = String(seed||""), h = 0;
+  for (var i=0;i<s.length;i++) h = (h*31 + s.charCodeAt(i)) >>> 0;
+  var hue = h % 360, hue2 = (hue + 42) % 360;
+  return "background:linear-gradient(135deg, hsl("+hue+" 68% 56%), hsl("+hue2+" 70% 44%));";
+}
 function postCardHTML(p){
   const ini = (p.author || p.handle || "?").split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase();
   const when = p.date ? fmtDate(String(p.date).slice(0,10)) : "";
   const url = p.url || ("https://x.com/" + (p.handle||""));
   return `<article class="post-card">
     <div class="post-head">
-      <div class="post-avatar">${esc(ini)}</div>
+      <div class="post-avatar" style="${avatarStyle(p.handle)}">${esc(ini)}</div>
       <div>
         <div class="post-author">${esc(p.author || ("@"+p.handle))}</div>
         <div class="post-handle">@${esc(p.handle||"")}</div>
@@ -726,7 +732,7 @@ function render(){
       : "";
   } else if(state.view==="markets"){
     const all = window.FINANCEPOSTS || [];
-    const posts = all.filter(p => !state.q || (((p.text||"")+" "+(p.author||"")+" "+(p.handle||"")).toLowerCase().includes(state.q)));
+    const posts = all.filter(p => !p.repost && (!state.q || (((p.text||"")+" "+(p.author||"")+" "+(p.handle||"")).toLowerCase().includes(state.q))));
     // Group by account (handle); order accounts by most-recent post; posts within each by date desc.
     const groups = {};
     posts.forEach(p=>{ (groups[p.handle]=groups[p.handle]||[]).push(p); });
