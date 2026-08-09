@@ -135,6 +135,9 @@ window.FINANCEPOSTS = [
    url:"https://x.com/SullyCNBC/status/2085871849368433151"},
   {author:"Andy Constan",handle:"dampedspring",date:"2026-08-08",repost:true,img:[],links:[],
    text:"Helene Meisler's Saturday poll: the next 100 points for the S&P — up or down?",
-   url:"https://x.com/Chartfest1/status/2086044816941400116"}
+   url:"https://x.com/Chartfest1/status/2086044816941400116"},
+  {author:"Barry Knapp (Ironsides Macro)",handle:"barryknapp",date:"2026-08-03",repost:false,img:[],links:["https://open.substack.com/pub/ironsidesmacro"],
+   text:"Monday Morning Briefer Brief: The end of forward guidance is not adding volatility but removing deleterious volatility suppression and restoring normal market function.",
+   url:"https://x.com/barryknapp"}
 ];
 window.FINANCEUPDATED = "Curated from X — Aug 8, 2026";
