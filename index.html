@@ -423,6 +423,9 @@
   .month-header { font-size:15px; font-weight:700; letter-spacing:.02em; color:var(--text); margin:0 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); display:flex; align-items:center; gap:10px; }
   .month-header .mcount { font-size:12px; font-weight:600; color:var(--text-faint); background:var(--surface); border:1px solid var(--border); border-radius:999px; padding:2px 9px; }
   .month-header .acct-handle { font-size:13px; font-weight:500; color:var(--text-faint); }
+  .my-take { background:rgba(255,180,84,.08); border:1px solid rgba(255,180,84,.22); border-left:3px solid var(--vendor); border-radius:8px; padding:10px 12px; margin:0 0 14px; }
+  .my-take .mt-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--vendor); margin-bottom:5px; display:flex; align-items:center; gap:5px; }
+  .my-take p { margin:0; font-size:13px; line-height:1.55; color:var(--text-dim); }
 
   .exec-summary { background:rgba(110,168,255,.07); border:1px solid rgba(110,168,255,.18); border-radius:10px; padding:11px 13px; margin:0 0 14px; flex:1; }
   .exec-summary .exec-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--accent); margin-bottom:6px; display:flex; align-items:center; gap:5px; }
@@ -675,6 +678,35 @@ function avatarStyle(seed){
   var hue = h % 360, hue2 = (hue + 42) % 360;
   return "background:linear-gradient(135deg, hsl("+hue+" 68% 56%), hsl("+hue2+" 70% 44%));";
 }
+const MARKET_SRC_COLORS = { "Aswath Damodaran":"#e0455a", "Downtown Josh Brown":"#0fbd6f", "Mike Santoli (CNBC)":"#4aa3ff" };
+function marketArticleHTML(a, i){
+  const src = a.source || "";
+  const color = MARKET_SRC_COLORS[src] || "#3b9dff";
+  const img = a.imageUrl
+    ? `<img src="${esc(a.imageUrl)}" alt="${esc(a.title)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+       <div class="fallback" style="display:none"><div class="fi" style="color:${color}">${esc(initials(src))}</div><div class="fs">${esc(src)}</div></div>`
+    : `<div class="fallback"><div class="fi" style="color:${color}">${esc(initials(src))}</div><div class="fs">${esc(src)}</div></div>`;
+  return `<article class="card" style="animation-delay:${Math.min(i*30,300)}ms">
+    <div class="thumb">
+      ${img}
+      <span class="src-chip"><span class="src-dot" style="background:${color}"></span>${esc(src)}</span>
+    </div>
+    <div class="body">
+      <div class="meta-row">
+        <span class="theme-tag" style="color:${color};background:${color}1f">${esc(a.author||src)}</span>
+        <span>${esc(fmtDate(a.date))}</span>
+      </div>
+      <h3><a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a></h3>
+      <p class="summary">${esc(a.summary)}</p>
+      ${a.take ? `<div class="my-take"><div class="mt-label">&#128172; My take</div><p>${esc(a.take)}</p></div>` : ""}
+      <div class="card-foot">
+        <a class="read-link" href="${esc(a.url)}" target="_blank" rel="noopener">Read article
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </article>`;
+}
 function postCardHTML(p){
   const ini = (p.author || p.handle || "?").split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase();
   const when = p.date ? fmtDate(String(p.date).slice(0,10)) : "";
@@ -731,30 +763,20 @@ function render(){
       ? `${filtered.length} saved article${filtered.length===1?"":"s"}` + (filtered.length!==all.length ? ` (of ${all.length} total)` : "") + " — grouped by month"
       : "";
   } else if(state.view==="markets"){
-    const all = window.FINANCEPOSTS || [];
-    const posts = all.filter(p => !p.repost && (!state.q || (((p.text||"")+" "+(p.author||"")+" "+(p.handle||"")).toLowerCase().includes(state.q))));
-    // Group by account (handle); order accounts by most-recent post; posts within each by date desc.
-    const groups = {};
-    posts.forEach(p=>{ (groups[p.handle]=groups[p.handle]||[]).push(p); });
-    const latest = h => groups[h].reduce((m,p)=> (p.date||"")>m ? (p.date||"") : m, "");
-    const keys = Object.keys(groups).sort((x,y)=> latest(y).localeCompare(latest(x)));
-
-    grid.className = "";  // sections carry their own inner .grid
-    if(posts.length){
-      grid.innerHTML = keys.map(h=>{
-        const g = groups[h].slice().sort((a,b)=> (b.date||"").localeCompare(a.date||""));
-        const name = g[0].author || ("@"+h);
-        const cards = g.map(postCardHTML).join("");
-        return `<section class="month-section"><h2 class="month-header">${esc(name)} <span class="acct-handle">@${esc(h)}</span> <span class="mcount">${g.length}</span></h2><div class="grid">${cards}</div></section>`;
-      }).join("");
-      grid.style.display = "block"; empty.style.display = "none";
+    const all = window.MARKETARTICLES || [];
+    const arts = all.filter(a => !state.q || ((a.title+" "+a.summary+" "+(a.take||"")+" "+(a.source||"")).toLowerCase().includes(state.q)))
+                    .sort((a,b)=> (b.date||"").localeCompare(a.date||""));
+    grid.className = "grid";
+    if(arts.length){
+      grid.innerHTML = arts.map((a,i)=>marketArticleHTML(a,i)).join("");
+      grid.style.display = "grid"; empty.style.display = "none";
     } else {
       grid.innerHTML = ""; grid.style.display = "none";
-      msg.textContent = all.length ? "No market posts match your search." : "No market posts loaded yet — ask to refresh your markets feed.";
+      msg.textContent = all.length ? "No market articles match your search." : "No market articles loaded yet.";
       empty.style.display = "block";
     }
     rc.textContent = all.length
-      ? `${posts.length} post${posts.length===1?"":"s"} from ${keys.length} finance account${keys.length===1?"":"s"}` + (window.FINANCEUPDATED ? ` — ${window.FINANCEUPDATED}` : "")
+      ? `${arts.length} article${arts.length===1?"":"s"} from Damodaran, Josh Brown & Santoli` + (window.MARKETUPDATED ? ` — ${window.MARKETUPDATED}` : "")
       : "";
   } else {
     const filtered = ARTICLES.filter(matchesFilters).sort((a,b)=> b.date.localeCompare(a.date));
@@ -794,10 +816,10 @@ function boot(){
   };
   document.head.appendChild(s);
 })();
-// Load the Markets (X posts) data separately; re-render if the Markets view is open.
+// Load the Markets (finance article) data separately; re-render if the Markets view is open.
 (function(){
   var s = document.createElement("script");
-  s.src = "finance-posts.js?v=" + Date.now();
+  s.src = "market-articles.js?v=" + Date.now();
   s.onload = function(){ if (state.view === "markets") render(); };
   s.onerror = function(){};
   document.head.appendChild(s);
