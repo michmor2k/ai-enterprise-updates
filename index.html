@@ -426,6 +426,7 @@
   .my-take { background:rgba(255,180,84,.08); border:1px solid rgba(255,180,84,.22); border-left:3px solid var(--vendor); border-radius:8px; padding:10px 12px; margin:0 0 14px; }
   .my-take .mt-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.07em; color:var(--vendor); margin-bottom:5px; display:flex; align-items:center; gap:5px; }
   .my-take p { margin:0; font-size:13px; line-height:1.55; color:var(--text-dim); }
+  .new-badge { display:inline-flex; align-items:center; gap:3px; font-size:10.5px; font-weight:800; letter-spacing:.05em; color:#08150d; background:linear-gradient(135deg,#4ade80,#22c55e); border-radius:6px; padding:2px 8px; box-shadow:0 0 0 1px rgba(74,222,128,.35), 0 2px 8px rgba(34,197,94,.35); }
 
   .exec-summary { background:rgba(110,168,255,.07); border:1px solid rgba(110,168,255,.18); border-radius:10px; padding:11px 13px; margin:0 0 14px; flex:1; }
   .exec-summary .exec-label { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--accent); margin-bottom:6px; display:flex; align-items:center; gap:5px; }
@@ -642,6 +643,7 @@ function cardHTML(a, i){
     </div>
     <div class="body">
       <div class="meta-row">
+        ${a.isNew && state.view!=='saved' ? `<span class="new-badge">&#9733; NEW</span>` : ""}
         <span class="theme-tag">${esc(THEME_LABELS[a.theme]||a.theme)}</span>
         <span>${esc(fmtDate(a.date))}</span>
       </div>
@@ -693,6 +695,7 @@ function marketArticleHTML(a, i){
     </div>
     <div class="body">
       <div class="meta-row">
+        ${a.isNew ? `<span class="new-badge">&#9733; NEW</span>` : ""}
         <span class="theme-tag" style="color:${color};background:${color}1f">${esc(a.author||src)}</span>
         <span>${esc(fmtDate(a.date))}</span>
       </div>
@@ -765,7 +768,7 @@ function render(){
   } else if(state.view==="markets"){
     const all = window.MARKETARTICLES || [];
     const arts = all.filter(a => !state.q || ((a.title+" "+a.summary+" "+(a.take||"")+" "+(a.source||"")).toLowerCase().includes(state.q)))
-                    .sort((a,b)=> (b.date||"").localeCompare(a.date||""));
+                    .sort((a,b)=> ((b.isNew?1:0)-(a.isNew?1:0)) || (b.date||"").localeCompare(a.date||""));
     grid.className = "grid";
     if(arts.length){
       grid.innerHTML = arts.map((a,i)=>marketArticleHTML(a,i)).join("");
@@ -779,7 +782,7 @@ function render(){
       ? `${arts.length} article${arts.length===1?"":"s"} from Damodaran, Josh Brown & Santoli` + (window.MARKETUPDATED ? ` — ${window.MARKETUPDATED}` : "")
       : "";
   } else {
-    const filtered = ARTICLES.filter(matchesFilters).sort((a,b)=> b.date.localeCompare(a.date));
+    const filtered = ARTICLES.filter(matchesFilters).sort((a,b)=> ((b.isNew?1:0)-(a.isNew?1:0)) || b.date.localeCompare(a.date));
     grid.className = "grid";
     grid.innerHTML = filtered.map((a,i)=>cardHTML(a,i)).join("");
     msg.textContent = "No articles match your filters.";
