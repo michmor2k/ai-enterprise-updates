@@ -1,59 +1,141 @@
-// Markets — finance/markets commentary from selected thinkers. Checked daily by the 5am job.
-// Each item has a factual summary plus "take" (Claude's opinion). Manual + daily refresh.
 window.MARKETARTICLES = [
-  {
-    title:"Why all the fuss about bond yields is happening now",
-    source:"Mike Santoli (CNBC)", author:"Michael Santoli", isNew:false,
-    url:"https://www.cnbc.com/2026/08/24/why-all-the-fuss-about-bond-yields-is-happening-now.html",
-    date:"2026-08-24",
-    imageUrl:"https://image.cnbcfm.com/api/v1/image/108351607-1787152233605-gettyimages-2290570628-US_STOCKS.jpeg?w=1024",
-    summary:"Santoli examines why the rise in real (inflation-adjusted) bond yields is suddenly commanding so much attention. The textbook view is that a cycle-high in real yields should restrain both economic growth and equity valuations — yet stocks have largely shrugged it off. He probes whether that resilience reflects genuine earnings strength or complacency about the discount-rate math underpinning rich multiples.",
-    take:"Santoli frames it correctly: the market is implicitly betting that strong nominal growth and earnings can offset a higher discount rate. That can hold — until it doesn't. Through an enterprise/AI lens, higher-for-longer real yields raise the bar most for long-duration AI-capex bets, which is exactly where Santoli and Damodaran quietly agree."
-  },
-  {
-    title:"AI's Bar Mitzvah Moment: From Hype & Hope to Business Questions",
-    source:"Aswath Damodaran", author:"Aswath Damodaran", isNew:false,
-    url:"https://aswathdamodaran.blogspot.com/2026/08/ais-bar-mitzvah-moment-from-hype-hope.html",
-    date:"2026-08-20",
-    imageUrl:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieF9ccr4palemNCYpPgnsfGVx5ac51S7c6CtbK3EvIgvQleNoLbELJ9sSoo5qWy8DG_DGj9hPOyJp2FV9emjGilWsDYxS4oxHVroIFMWZy1-ka1sbMW2jARxYOS5Phj5ADzYHZ0DjBTIlze-drCXEEe40iYQc1da-xUwtCJ3jUGkEKwEwRTBQ2mTOLYgw/w335-h400/BigMarketDelusion.jpg",
-    summary:"Damodaran argues AI has reached its 'bar mitzvah moment' — the point where the industry must prove actual business viability rather than riding hype. He structures a framework around four variables: whether AI replaces workers or augments them as a tool, pricing models (subscription vs. usage), industrial breadth, and geographic reach. Despite a theoretical $26 trillion total addressable market, current AI product revenues sit near $250 billion while hyperscaler capex has already exceeded $1.7 trillion. He singles out Anthropic ($2T valuation) and OpenAI as examples of the 'big market delusion,' where valuations require revenue scenarios that exceed plausible market share.",
-    take:"This is the clearest analytical framework yet for separating AI signal from noise. Damodaran's $250B-revenue vs. $1.7T-capex gap is the single most important number enterprise leaders should internalize heading into 2027 budget cycles. The 'tool vs. employee replacement' axis is especially decision-relevant: companies betting on AI to eliminate headcount are pricing in the optimistic end of his TAM range, which he views as delusional. The practical implication — AI vendors with usage-based pricing and demonstrable productivity ROI are better positioned than those selling the broad replacement narrative, and any enterprise still justifying AI spend on vague efficiency promises is behind the curve."
-  },
-  {
-    title:"Santoli: Earnings bonanza that lifted the market to a record may not be all that it appears to be",
-    source:"Mike Santoli (CNBC)", author:"Michael Santoli", isNew:false,
-    url:"https://www.cnbc.com/2026/08/17/santoli-earnings-bonanza-that-lifted-market-to-record-may-not-be-all-that-it-appears-to-be.html",
-    date:"2026-08-17",
-    imageUrl:"https://image.cnbcfm.com/api/v1/image/108348538-1786548860834-108348538-1786548734348-gettyimages-2289681079-LONDIAN_WASON_IPO.jpg?w=1024",
-    summary:"With the S&P 500 up more than 6% in 12 trading days to record highs on the back of a strong earnings season, Santoli cautions that the 'bonanza' may be less impressive than the headlines suggest — questioning breadth, the quality and comparability of the beats, and whether the rally's internals justify the record levels.",
-    take:"Classic Santoli: respect the tape, distrust the narrative. He's right to separate 'record index' from 'healthy market' — narrow leadership and easy comps can flatter aggregate EPS. It pairs with his bond-yield piece: strong earnings are the market's answer to higher yields, so if earnings quality is softer than it looks, the yield story gets more dangerous."
-  },
-  {
-    title:"The Situational Awareness Blow-up: The Collateral Damage from Investing Conviction",
-    source:"Aswath Damodaran", author:"Aswath Damodaran", isNew:false,
-    url:"https://aswathdamodaran.blogspot.com/2026/08/the-situational-awareness-blow-up.html",
-    date:"2026-08-10",
-    imageUrl:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXo8uQZJpMDXttFVJ7tuZK7HLO1sArfu_qD4B0PO5HeVhmRYlnIa8FL1W9iuQTKm_N3Rp2GOBotuMvHwyylHH1mSUqLTIB9ycF7v6BDVzP0VJOiZLzxKSh22in1VER47eWa4uHjQxQbMQCdxaQdtFgytsm0ihkbLYUY4woP8hrMHvE9a5-qSiaVofJF14/w400-h163/SATheRise.jpg",
-    summary:"Damodaran uses the collapse of Leopold Aschenbrenner's Situational Awareness hedge fund as a case study in how investment conviction goes lethal when combined with leverage. The fund returned ~450% by August 2025 by concentrating heavily in AI winners and shorting disrupted sectors, then lost over two-thirds of its value within four weeks in July 2026, forcing full liquidation. He defines conviction as confidence in returns relative to risk, and warns that the more macro and speculative the thesis, the more dangerous it is to express with maximum concentration and leverage.",
-    take:"A timely warning for enterprise treasury functions and any internal AI thesis built on a single narrative. The Aschenbrenner fund is a real-world proof point that 450% up and -67% down can happen in the same position within 12 months when leverage amplifies conviction. The structural lesson for enterprise risk managers: scenario-weight your AI exposure across multiple outcomes, not just the consensus bull case. It also signals the AI trade has matured past the point where a simple 'AI wins, incumbents lose' narrative generates alpha — the edge has to be more precise now."
-  },
-  {
-    title:"We ain't seen nothing yet.",
-    source:"Downtown Josh Brown", author:"Josh Brown", isNew:false,
-    url:"https://www.downtownjoshbrown.com/p/we-ain-t-seen-nothing-yet",
-    date:"2026-08-02",
-    imageUrl:"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/asset/file/edc330cd-79d0-4826-a3a5-bf12f41ad6a3/alex_kantrowitz.png?t=1785677394",
-    summary:"Brown argues that skepticism about hyperscaler AI capex is fundamentally misreading the scale of future compute demand. Drawing on an interview with Big Technology's Alex Kantrowitz, he contends that a billion people gaining access to personal AI assistants will require compute capacity far beyond what exists today, and extends the argument to autonomous vehicles, humanoid robots, and automated manufacturing. His conclusion: hyperscaler executives committing trillions are seeing a demand horizon that Wall Street analysts focused on near-term ROI are simply not modeling.",
-    take:"Brown makes the 'demand is underestimated' case more forcefully than most bulls, and the framing — a billion personal AI assistants running concurrently — is a useful mental model for enterprise technology planners. The nuance he glosses over is timing: demand at that scale is 3-7 years out, while capex is being deployed now. That mismatch is precisely what creates near-term risk for AI infrastructure stocks even if the long-run thesis is correct. The actionable read for enterprise leaders: don't cancel AI initiatives over current compute costs, but do build procurement flexibility into multi-year contracts because the cost curve will move significantly."
-  },
-  {
-    title:"How Ron Baron returned over $60 billion to his investors",
-    source:"Downtown Josh Brown", author:"Josh Brown", isNew:false,
-    url:"https://www.downtownjoshbrown.com/p/how-ron-baron-returned-over-60-billion-to-his-investors",
-    date:"2026-07-25",
-    imageUrl:"https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/asset/file/eaff9351-21ae-4e4c-88d6-883dcd1d79bb/ron_baron.png?t=1784994137",
-    summary:"Brown profiles Ron Baron's track record at Baron Capital, highlighting over $60 billion returned to investors since inception. It centers on Baron's early Tesla position at $14 per share (split-adjusted, 2014) and his current $25 billion SpaceX stake as defining examples of his concentrated, long-duration conviction style, and argues that Baron's structural advantage is the mutual-fund format, which — unlike hedge funds — gives him patience to hold through multi-year volatility without redemption pressure.",
-    take:"The Baron profile lands as a quiet counterargument to the Aschenbrenner blow-up Damodaran documented the same month: here is a manager who runs concentrated bets in transformational companies and wins — the difference is structure, not thesis. Baron's mutual-fund wrapper eliminates the margin-call and redemption-spiral risk that killed Situational Awareness. For investment committees benchmarking external managers or evaluating internal venture portfolios, the key variable is not conviction level but liquidity match: long-duration bets require patient capital. His SpaceX stake is also a signal that private-market, AI-adjacent infrastructure may offer better risk-adjusted entry points than publicly valued AI software names."
-  }
+    {
+        "title":  "AI\u0027s Bar Mitzvah Moment: From Hype \u0026 Hope to Business Questions",
+        "source":  "Aswath Damodaran",
+        "author":  "Aswath Damodaran",
+        "url":  "https://aswathdamodaran.blogspot.com/2026/08/ais-bar-mitzvah-moment-from-hype-hope.html",
+        "date":  "2026-08-20",
+        "imageUrl":  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieF9ccr4palemNCYpPgnsfGVx5ac51S7c6CtbK3EvIgvQleNoLbELJ9sSoo5qWy8DG_DGj9hPOyJp2FV9emjGilWsDYxS4oxHVroIFMWZy1-ka1sbMW2jARxYOS5Phj5ADzYHZ0DjBTIlze-drCXEEe40iYQc1da-xUwtCJ3jUGkEKwEwRTBQ2mTOLYgw/w335-h400/BigMarketDelusion.jpg",
+        "summary":  "Damodaran argues AI has reached a maturation inflection point where it must prove business fundamentals rather than coast on hype. While AI\u0027s total addressable market could reach $26 trillion, actual value depends on whether AI replaces employees or merely augments them, what pricing the market will bear, and geographic reach. He flags a dangerous gap: $1.7 trillion in capital investment from major tech companies vastly outpaces current AI revenues of roughly $250 billion. Regulatory backlash, data privacy constraints, and workforce displacement are material risks both optimists and skeptics consistently underweight.",
+        "take":  "Damodaran is doing what he does best — bringing cold valuation discipline to a market narrative running on narrative. The $1.7T vs $250B capex-to-revenue gap is the single number every AI bull needs to sit with. History says that gap closes one of two ways: revenues catch up (the bull case) or capex gets written down (the bear case). The market is overwhelmingly pricing the first scenario, which means the asymmetry of risk is skewed downward. Investors should demand evidence of AI revenue acceleration in Q3 and Q4 2026 earnings — not more promises about future TAM.",
+        "isNew":  true
+    },
+    {
+        "title":  "The Situational Awareness Blow-up: The Collateral Damage from Investing Conviction",
+        "source":  "Aswath Damodaran",
+        "author":  "Aswath Damodaran",
+        "url":  "https://aswathdamodaran.blogspot.com/2026/08/the-situational-awareness-blow-up.html",
+        "date":  "2026-08-10",
+        "imageUrl":  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXo8uQZJpMDXttFVJ7tuZK7HLO1sArfu_qD4B0PO5HeVhmRYlnIa8FL1W9iuQTKm_N3Rp2GOBotuMvHwyylHH1mSUqLTIB9ycF7v6BDVzP0VJOiZLzxKSh22in1VER47eWa4uHjQxQbMQCdxaQdtFgytsm0ihkbLYUY4woP8hrMHvE9a5-qSiaVofJF14/w400-h163/SATheRise.jpg",
+        "summary":  "Damodaran dissects the collapse of Leopold Aschenbrenner\u0027s hedge fund, which rose 450% by June 2026 betting on AI winners and losers with maximum leverage, then lost two-thirds of its value in July before liquidating. He argues that excessive conviction — the belief an investment is a near-certainty — is the most dangerous psychological state in investing because it leads to concentration and dangerous use of debt. The fund\u0027s demise illustrates how leverage eliminates the time an investor needs for a correct thesis to play out. Damodaran\u0027s conclusion: humble money beats smart money because overconfident investors consistently overreach at the worst moments.",
+        "take":  "This is a parable with direct relevance to the current AI trade. Plenty of leveraged vehicles — retail options, AI-focused ETFs, levered long funds — have ridden the AI wave with a similar conviction profile to Aschenbrenner\u0027s fund. The lesson isn\u0027t that the AI thesis is wrong; it\u0027s that leverage converts a timing error into a permanent loss. The investors most at risk right now are those who are right about AI\u0027s long-term importance but wrong about the near-term path, and who are using margin or derivatives that won\u0027t survive a 30-40% drawdown. Conviction and position sizing are separate skills — most people conflate them.",
+        "isNew":  true
+    },
+    {
+        "title":  "We ain\u0027t seen nothing yet.",
+        "source":  "Downtown Josh Brown",
+        "author":  "Josh Brown",
+        "url":  "https://www.downtownjoshbrown.com/p/we-ain-t-seen-nothing-yet",
+        "date":  "2026-08-02",
+        "imageUrl":  "https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/asset/file/edc330cd-79d0-4826-a3a5-bf12f41ad6a3/alex_kantrowitz.png?t=1785677394",
+        "summary":  "Josh Brown pushes back on Wall Street\u0027s concern about AI infrastructure overspending, arguing the demand from future AI agents will far exceed current computing capacity. He points to surging cloud revenue growth — AWS at 37%, Azure at 43%, Google Cloud at 82% — and OpenAI reaching one billion users as validation of demand. Brown contends that analysts focused on today\u0027s chatbots and coding assistants are missing the coming wave of autonomous AI agents and physical AI (robotics, autonomous vehicles) that will require multiples more compute. He references Elon Musk\u0027s prediction of 10x GDP growth to frame the scale of what\u0027s coming.",
+        "take":  "Brown is making the classic tech-cycle argument: the builders of infrastructure always look like they are overspending until suddenly they are not. He\u0027s probably right directionally, but timing is everything. The history of infrastructure buildouts — fiber in the 1990s, data centers in the 2000s — shows that even correct long-term theses can produce brutal intermediate drawdowns when supply outpaces near-term demand. The cloud growth numbers Brown cites are genuinely impressive, but 82% Google Cloud growth could decelerate to 40% in two quarters. Bulls need a credible bridge between today\u0027s capex and tomorrow\u0027s utilization rates — revenue growth is necessary but not sufficient.",
+        "isNew":  true
+    },
+    {
+        "title":  "How Ron Baron returned over $60 billion to his investors",
+        "source":  "Downtown Josh Brown",
+        "author":  "Josh Brown",
+        "url":  "https://www.downtownjoshbrown.com/p/how-ron-baron-returned-over-60-billion-to-his-investors",
+        "date":  "2026-07-25",
+        "imageUrl":  "https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/asset/file/eaff9351-21ae-4e4c-88d6-883dcd1d79bb/ron_baron.png?t=1784994137",
+        "summary":  "Brown profiles Ron Baron, whose fund has been the top-performing U.S. mutual fund since 2003, examining how early and outsized bets on Tesla and SpaceX generated over $60 billion in returns. Baron\u0027s edge is holding concentrated positions through extreme volatility and widespread skepticism, holding a current $5 billion Tesla position and $25 billion SpaceX stake. Brown argues the strategy should be academically impossible — active management rarely outperforms at this scale — yet the returns are empirical fact. The piece frames Baron\u0027s approach as a template for conviction-based, long-duration investing.",
+        "take":  "The Ron Baron story is seductive but requires careful disaggregation. Baron\u0027s Tesla bet was not just conviction — it was early access to private SpaceX rounds and a concentrated portfolio that most fund managers cannot legally or fiduciarily replicate. His results are real, but the lesson is less \u0027buy and hold with conviction\u0027 and more \u0027identify asymmetric bets with secular tailwinds before consensus.\u0027 For most investors, trying to replicate Baron\u0027s approach without his information advantages, fund structure, and tolerance for years of underperformance is likely to produce a very different outcome. The more actionable takeaway is the timeframe: Baron\u0027s average holding period makes most institutional investors\u0027 \u0027long-term\u0027 look short.",
+        "isNew":  true
+    },
+    {
+        "title":  "Santoli: Why investors should be on high alert heading into September",
+        "source":  "Mike Santoli (CNBC)",
+        "author":  "Michael Santoli",
+        "url":  "https://www.cnbc.com/2026/08/31/santoli-why-investors-should-be-on-high-alert-heading-into-september.html",
+        "date":  "2026-08-31",
+        "imageUrl":  null,
+        "summary":  "Santoli warns that key market metrics are coiling near consequential thresholds as August ends with the S\u0026P 500 barely changed from three weeks prior and just below the 7,800 record. Sentiment surveys show excessive bullishness, real-time market metrics show complacency, and earnings concentration is extreme — Nvidia and Micron alone account for one-third of aggregate 2026 earnings growth. Commodity indexes are rising toward five-year highs, corporate credit spreads are remarkably tight, and a risk-appetite gauge tracking low-quality vs. defensive stocks has retreated to its early-2026 breakout level.",
+        "take":  "Santoli is flagging a setup where almost everything that could go right already has — tight spreads, low vol, bullish sentiment, records — which leaves limited buffer for any negative surprise. The earnings concentration point is particularly important: when two companies (Nvidia, Micron) are driving a third of index earnings growth, the market\u0027s headline EPS strength is a fragile construction. Any guidance miss or capex concern from either name could disproportionately reprice the index. September\u0027s seasonality is real but should be treated as a headwind, not a certainty — the more actionable signal is the complacency in credit and vol markets that leaves the market with little room for error.",
+        "isNew":  true
+    },
+    {
+        "title":  "Santoli: Earnings bonanza that lifted market to record may not be all that it appears to be",
+        "source":  "Mike Santoli (CNBC)",
+        "author":  "Michael Santoli",
+        "url":  "https://www.cnbc.com/2026/08/17/santoli-earnings-bonanza-that-lifted-market-to-record-may-not-be-all-that-it-appears-to-be.html",
+        "date":  "2026-08-17",
+        "imageUrl":  null,
+        "summary":  "Santoli examines the S\u0026P 500\u0027s sharp rebound — up more than 6% in 12 trading days to fresh records — characterizing it as a Subtraction of All Fears rally that relieved concerns about tech AI capex punishment, semiconductor bubbles, and Fed rate hikes. However, he questions the earnings quality driving the rally, noting that results may be inflated by tech giants recognizing gains on AI company stakes, data-center revenue funded by prior earnings with future expense recognition, one-time energy sector gains from supply disruptions, and easy comparisons against Q2 2025\u0027s Liberation Day chaos.",
+        "take":  "Santoli is essentially issuing a yellow flag on earnings quality at the exact moment the market is celebrating the quantity of beats. The \u0027over-earning\u0027 dynamic he describes — where gains on AI stakes and deferred expense recognition are inflating reported EPS — is a legitimate concern that could mean the current P/E ratio is understating true valuation. The comparison base effect he cites will also reverse sharply in Q2 2026 comps, making future beats harder. For portfolio managers, this argues for looking through headline EPS to free cash flow and organic revenue growth as more reliable signals of fundamental health — and being skeptical of multiple expansion when earnings quality is in question.",
+        "isNew":  true
+    },
+    {
+        "value":  [
+                      {
+                          "title":  "Why all the fuss about bond yields is happening now",
+                          "source":  "Mike Santoli (CNBC)",
+                          "author":  "Michael Santoli",
+                          "isNew":  false,
+                          "url":  "https://www.cnbc.com/2026/08/24/why-all-the-fuss-about-bond-yields-is-happening-now.html",
+                          "date":  "2026-08-24",
+                          "imageUrl":  "https://image.cnbcfm.com/api/v1/image/108351607-1787152233605-gettyimages-2290570628-US_STOCKS.jpeg?w=1024",
+                          "summary":  "Santoli examines why the rise in real (inflation-adjusted) bond yields is suddenly commanding so much attention. The textbook view is that a cycle-high in real yields should restrain both economic growth and equity valuations â€” yet stocks have largely shrugged it off. He probes whether that resilience reflects genuine earnings strength or complacency about the discount-rate math underpinning rich multiples.",
+                          "take":  "Santoli frames it correctly: the market is implicitly betting that strong nominal growth and earnings can offset a higher discount rate. That can hold â€” until it doesn\u0027t. Through an enterprise/AI lens, higher-for-longer real yields raise the bar most for long-duration AI-capex bets, which is exactly where Santoli and Damodaran quietly agree."
+                      },
+                      {
+                          "title":  "AI\u0027s Bar Mitzvah Moment: From Hype \u0026 Hope to Business Questions",
+                          "source":  "Aswath Damodaran",
+                          "author":  "Aswath Damodaran",
+                          "isNew":  false,
+                          "url":  "https://aswathdamodaran.blogspot.com/2026/08/ais-bar-mitzvah-moment-from-hype-hope.html",
+                          "date":  "2026-08-20",
+                          "imageUrl":  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEieF9ccr4palemNCYpPgnsfGVx5ac51S7c6CtbK3EvIgvQleNoLbELJ9sSoo5qWy8DG_DGj9hPOyJp2FV9emjGilWsDYxS4oxHVroIFMWZy1-ka1sbMW2jARxYOS5Phj5ADzYHZ0DjBTIlze-drCXEEe40iYQc1da-xUwtCJ3jUGkEKwEwRTBQ2mTOLYgw/w335-h400/BigMarketDelusion.jpg",
+                          "summary":  "Damodaran argues AI has reached its \u0027bar mitzvah moment\u0027 â€” the point where the industry must prove actual business viability rather than riding hype. He structures a framework around four variables: whether AI replaces workers or augments them as a tool, pricing models (subscription vs. usage), industrial breadth, and geographic reach. Despite a theoretical $26 trillion total addressable market, current AI product revenues sit near $250 billion while hyperscaler capex has already exceeded $1.7 trillion. He singles out Anthropic ($2T valuation) and OpenAI as examples of the \u0027big market delusion,\u0027 where valuations require revenue scenarios that exceed plausible market share.",
+                          "take":  "This is the clearest analytical framework yet for separating AI signal from noise. Damodaran\u0027s $250B-revenue vs. $1.7T-capex gap is the single most important number enterprise leaders should internalize heading into 2027 budget cycles. The \u0027tool vs. employee replacement\u0027 axis is especially decision-relevant: companies betting on AI to eliminate headcount are pricing in the optimistic end of his TAM range, which he views as delusional. The practical implication â€” AI vendors with usage-based pricing and demonstrable productivity ROI are better positioned than those selling the broad replacement narrative, and any enterprise still justifying AI spend on vague efficiency promises is behind the curve."
+                      },
+                      {
+                          "title":  "Santoli: Earnings bonanza that lifted the market to a record may not be all that it appears to be",
+                          "source":  "Mike Santoli (CNBC)",
+                          "author":  "Michael Santoli",
+                          "isNew":  false,
+                          "url":  "https://www.cnbc.com/2026/08/17/santoli-earnings-bonanza-that-lifted-market-to-record-may-not-be-all-that-it-appears-to-be.html",
+                          "date":  "2026-08-17",
+                          "imageUrl":  "https://image.cnbcfm.com/api/v1/image/108348538-1786548860834-108348538-1786548734348-gettyimages-2289681079-LONDIAN_WASON_IPO.jpg?w=1024",
+                          "summary":  "With the S\u0026P 500 up more than 6% in 12 trading days to record highs on the back of a strong earnings season, Santoli cautions that the \u0027bonanza\u0027 may be less impressive than the headlines suggest â€” questioning breadth, the quality and comparability of the beats, and whether the rally\u0027s internals justify the record levels.",
+                          "take":  "Classic Santoli: respect the tape, distrust the narrative. He\u0027s right to separate \u0027record index\u0027 from \u0027healthy market\u0027 â€” narrow leadership and easy comps can flatter aggregate EPS. It pairs with his bond-yield piece: strong earnings are the market\u0027s answer to higher yields, so if earnings quality is softer than it looks, the yield story gets more dangerous."
+                      },
+                      {
+                          "title":  "The Situational Awareness Blow-up: The Collateral Damage from Investing Conviction",
+                          "source":  "Aswath Damodaran",
+                          "author":  "Aswath Damodaran",
+                          "isNew":  false,
+                          "url":  "https://aswathdamodaran.blogspot.com/2026/08/the-situational-awareness-blow-up.html",
+                          "date":  "2026-08-10",
+                          "imageUrl":  "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXo8uQZJpMDXttFVJ7tuZK7HLO1sArfu_qD4B0PO5HeVhmRYlnIa8FL1W9iuQTKm_N3Rp2GOBotuMvHwyylHH1mSUqLTIB9ycF7v6BDVzP0VJOiZLzxKSh22in1VER47eWa4uHjQxQbMQCdxaQdtFgytsm0ihkbLYUY4woP8hrMHvE9a5-qSiaVofJF14/w400-h163/SATheRise.jpg",
+                          "summary":  "Damodaran uses the collapse of Leopold Aschenbrenner\u0027s Situational Awareness hedge fund as a case study in how investment conviction goes lethal when combined with leverage. The fund returned ~450% by August 2025 by concentrating heavily in AI winners and shorting disrupted sectors, then lost over two-thirds of its value within four weeks in July 2026, forcing full liquidation. He defines conviction as confidence in returns relative to risk, and warns that the more macro and speculative the thesis, the more dangerous it is to express with maximum concentration and leverage.",
+                          "take":  "A timely warning for enterprise treasury functions and any internal AI thesis built on a single narrative. The Aschenbrenner fund is a real-world proof point that 450% up and -67% down can happen in the same position within 12 months when leverage amplifies conviction. The structural lesson for enterprise risk managers: scenario-weight your AI exposure across multiple outcomes, not just the consensus bull case. It also signals the AI trade has matured past the point where a simple \u0027AI wins, incumbents lose\u0027 narrative generates alpha â€” the edge has to be more precise now."
+                      },
+                      {
+                          "title":  "We ain\u0027t seen nothing yet.",
+                          "source":  "Downtown Josh Brown",
+                          "author":  "Josh Brown",
+                          "isNew":  false,
+                          "url":  "https://www.downtownjoshbrown.com/p/we-ain-t-seen-nothing-yet",
+                          "date":  "2026-08-02",
+                          "imageUrl":  "https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/asset/file/edc330cd-79d0-4826-a3a5-bf12f41ad6a3/alex_kantrowitz.png?t=1785677394",
+                          "summary":  "Brown argues that skepticism about hyperscaler AI capex is fundamentally misreading the scale of future compute demand. Drawing on an interview with Big Technology\u0027s Alex Kantrowitz, he contends that a billion people gaining access to personal AI assistants will require compute capacity far beyond what exists today, and extends the argument to autonomous vehicles, humanoid robots, and automated manufacturing. His conclusion: hyperscaler executives committing trillions are seeing a demand horizon that Wall Street analysts focused on near-term ROI are simply not modeling.",
+                          "take":  "Brown makes the \u0027demand is underestimated\u0027 case more forcefully than most bulls, and the framing â€” a billion personal AI assistants running concurrently â€” is a useful mental model for enterprise technology planners. The nuance he glosses over is timing: demand at that scale is 3-7 years out, while capex is being deployed now. That mismatch is precisely what creates near-term risk for AI infrastructure stocks even if the long-run thesis is correct. The actionable read for enterprise leaders: don\u0027t cancel AI initiatives over current compute costs, but do build procurement flexibility into multi-year contracts because the cost curve will move significantly."
+                      },
+                      {
+                          "title":  "How Ron Baron returned over $60 billion to his investors",
+                          "source":  "Downtown Josh Brown",
+                          "author":  "Josh Brown",
+                          "isNew":  false,
+                          "url":  "https://www.downtownjoshbrown.com/p/how-ron-baron-returned-over-60-billion-to-his-investors",
+                          "date":  "2026-07-25",
+                          "imageUrl":  "https://media.beehiiv.com/cdn-cgi/image/format=auto,fit=scale-down,onerror=redirect/uploads/asset/file/eaff9351-21ae-4e4c-88d6-883dcd1d79bb/ron_baron.png?t=1784994137",
+                          "summary":  "Brown profiles Ron Baron\u0027s track record at Baron Capital, highlighting over $60 billion returned to investors since inception. It centers on Baron\u0027s early Tesla position at $14 per share (split-adjusted, 2014) and his current $25 billion SpaceX stake as defining examples of his concentrated, long-duration conviction style, and argues that Baron\u0027s structural advantage is the mutual-fund format, which â€” unlike hedge funds â€” gives him patience to hold through multi-year volatility without redemption pressure.",
+                          "take":  "The Baron profile lands as a quiet counterargument to the Aschenbrenner blow-up Damodaran documented the same month: here is a manager who runs concentrated bets in transformational companies and wins â€” the difference is structure, not thesis. Baron\u0027s mutual-fund wrapper eliminates the margin-call and redemption-spiral risk that killed Situational Awareness. For investment committees benchmarking external managers or evaluating internal venture portfolios, the key variable is not conviction level but liquidity match: long-duration bets require patient capital. His SpaceX stake is also a signal that private-market, AI-adjacent infrastructure may offer better risk-adjusted entry points than publicly valued AI software names."
+                      }
+                  ],
+        "isNew":  false,
+        "Count":  6
+    }
 ];
-window.MARKETUPDATED = "Updated Aug 31, 2026";
+window.MARKETUPDATED = "Updated September 1, 2026";
